@@ -180,6 +180,19 @@ h1, h2, h3, h4, h5,
 .border-top {
   border-top: 1px solid #edf0f5 !important; }
 
+@media (max-width: 768px) {
+  /* Пример: измените размер шрифта для мобильных устройств */
+  body {
+      font-size: 14px;
+  }
+
+  /* Пример: измените стили для навигационного меню */
+  .site-navbar {
+      flex-direction: column;
+  }
+}
+
+
 .site-footer {
   padding: 4em 0;
   background: #333333; }
