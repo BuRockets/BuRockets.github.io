@@ -153,38 +153,38 @@
                     <h2 id="-">Подключение</h2>
                     <p>Первым делом нужно подключить BluePill к программатору ST-Link V2</p>
                     <p>Ниже представлена схема подключения:</p>
-                    <p><img src="./images/connect.png" width="450" height="150"></p>
+                    <p><img src="./images/connect.png" class="img-lab" width="450" height="150"></p>
                     <h2 id="st-link-utility">ST-Link Utility</h2>
                     <p>Далее подключаем ST-Link V2 к компьютеру через USB порт, и открываем ST-Link Utility. Данная программа потребуется нам для проверки, работает ли сам чип stm, с помощью нее мы можем подключиться к микроконтроллеру, считать его прошивку, или загрузить на него уже готовую прошивку в виде .bin файла.</p>
-                    <p>После того как программа открылась, нажимаем <strong>Connect to the target</strong> <img src="./images/connect_to_the_target.png" alt=""></p>
+                    <p>После того как программа открылась, нажимаем <strong>Connect to the target</strong> <img src="./images/connect_to_the_target.png" class="img-lab" alt=""></p>
                     <p>Если вы все подключили верно и плата работает, то память будет считана и частично отображаться на экране.</p>
-                    <p><img src="./images/read_memory.png" width="450" height="375"></p>
-                    <p>После того как мы убедились, что все работает, отключаемся от stm_ки, нажав кнопку <strong>Disconnect from the target</strong>  <img src="./images/disconnect.png" alt=""> и закрываем программу.</p>
+                    <p><img src="./images/read_memory.png"  class="img-lab" width="450" height="375"></p>
+                    <p>После того как мы убедились, что все работает, отключаемся от stm_ки, нажав кнопку <strong>Disconnect from the target</strong>  <img src="./images/disconnect.png" class="img-lab" alt=""> и закрываем программу.</p>
                     <blockquote>
                     <p>![NOTE]
-                    Возможно, что на вашей новой stm не будет никакой прошивки, когда вы достанете ее из коробки. Тогда при подключении считываемая память будет заполнена FFFFFFFF. Если в дальнейшем вы захотите отчистить свой контроллер от прошивки ⇒ нажимаете <strong>Full chip erase</strong> <img src="./images/full_chip_erase.png" alt=""> и память будет отчищена (заполнена FFFFFFFF).</p>
+                    Возможно, что на вашей новой stm не будет никакой прошивки, когда вы достанете ее из коробки. Тогда при подключении считываемая память будет заполнена FFFFFFFF. Если в дальнейшем вы захотите отчистить свой контроллер от прошивки ⇒ нажимаете <strong>Full chip erase</strong> <img src="./images/full_chip_erase.png" class="img-lab" alt=""> и память будет отчищена (заполнена FFFFFFFF).</p>
                     </blockquote>
-                    <p><img src="./images/chip_erase.png" width="450" height="375"></p>
+                    <p><img src="./images/chip_erase.png" class="img-lab" width="450" height="375"></p>
                     <h2 id="-">Первая прошивка платы</h2>
                     <p>После того, как мы убедились, что все верно подключили, давайте напишем свою первую прошивку, которая будет мигать светодиодом на плате BluePill, для этого:</p>
                     <p>Открываем CubeIde и в верхней панели выбираем: </p>
                     <p>⇒ File ⇒ New ⇒ STM32 Project</p>
-                    <p><img src="./images/STM32_project.png" alt=""></p>
+                    <p><img src="./images/STM32_project.png" class="img-lab" alt=""></p>
                     <p>Далее вводим название модели чипа stm ⇒ выбираем его в правой нижней области экрана ⇒ жмем <strong>Next</strong></p>
-                    <p><img src="./images/f103C8t6.png" alt=""></p>
+                    <p><img src="./images/f103C8t6.png" class="img-lab" alt=""></p>
                     <p>Отлично, теперь наш проект под именно наш контроллер сгенерировался. В левой части экрана открывается поле Project Explorer, где мы можем видеть все файлы проекта. </p>
                     <p><img src="./images/Project_explorer.png" alt=""></p>
                     <p>Справа открылся файл с расширением .ioc, слева вкладки для настройки тактирования, портов ввода-вывода и различной периферии.</p>
-                    <p><img src="./images/ioc.png" alt=""></p>
+                    <p><img src="./images/ioc.png" class="img-lab" alt=""></p>
                     <p>В первую очередь подключим два пина на контроллере для отладки нашей будущей программы:</p>
                     <p>⇒ <strong>System Core</strong> ⇒ <strong>SYS</strong> ⇒ <strong>Debug</strong> (Serial Wire)</p>
-                    <p><img src="./images/Serial_wire.png" alt=""></p>
+                    <p><img src="./images/Serial_wire.png" class="img-lab" alt=""></p>
                     <p>В итоге должно получиться вот так:</p>
-                    <p><img src="./images/SWD.png" width="300" height="300"></p>
+                    <p><img src="./images/SWD.png" class="img-lab" width="300" height="300"></p>
                     <p>Далее подключим GPIO пин настроенный на выход для светодиода.</p>
                     <p>Чтобы определить какой пин подключен к светодиоду на плате BluePill, необходимо открыть <a href="https://github.com/Rocket-B/STM32_labs/blob/main/doc/Blue_Pill.pdf">схемотехнику платы</a>. </p>
                     <p>На схемотехнике необходимо найти светодиод по его условно графическому обозначению (УГО). </p>
-                    <p><img src="./images/led_diod.png" alt=""></p>
+                    <p><img src="./images/led_diod.png" class="img-lab" alt=""></p>
                     <blockquote>
                     <p>[!NOTE]
                     Светодиод пропускает через себя ток, только в том случае, если напряжение на аноде больше, чем напряжение на катоде. УГО светодиода напоминает стрелку в направлении которой должен течь ток, для того, чтобы светодиод загорелся. Ток течет от большего напряжения к наименьшему.</p>
