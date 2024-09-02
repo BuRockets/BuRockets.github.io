@@ -167,14 +167,14 @@
             <!--end Конструируй в Solid Works-->
             <div class="course bg-white h-100 align-self-stretch">
               <figure class="m-0">
-                  <a href="#" onclick="checkCredentials(event)">
+                  <a href="#" onclick="check_solidworks_Credentials(event)">
                       <img src="images/solidworks_rocket.jpg" alt="Image" class="img-fluid">
                   </a>
               </figure>
               <div class="course-inner-text py-4 px-4">
                   <span class="course-price">$99</span>
                   <div class="meta"><span class="icon-clock-o"></span>4 Lessons / 12 weeks</div>
-                  <h3><a href="#">Конструируй в Solid Works</a></h3>
+                  <h3><a href="#" onclick="checkCredentials(event)">Конструируй в Solid Works</a></h3>
                   <p>Создай надежный корпус ракеты.</p>
               </div>
               <div class="d-flex border-top stats">
@@ -184,7 +184,7 @@
           </div>
           
           <script>
-              function checkCredentials(event) {
+              function check_solidworks_Credentials(event) {
                   event.preventDefault(); // Предотвращаем переход по ссылке
           
                   // Запрашиваем email и пароль у пользователя
@@ -211,14 +211,14 @@
             <!--Программируй ARDUINO-->
             <div class="course bg-white h-100 align-self-stretch">
               <figure class="m-0">
-                  <a href="#" onclick="checkCredentials(event)">
+                  <a href="#" onclick="check_arduino_Credentials(event)">
                       <img src="images/arduino.jpg" alt="Image" class="img-fluid">
                   </a>
               </figure>
               <div class="course-inner-text py-4 px-4">
                   <span class="course-price">$99</span>
                   <div class="meta"><span class="icon-clock-o"></span>4 Lessons / 12 weeks</div>
-                  <h3><a href="#">Программируй Arduino</a></h3>
+                  <h3><a href="#" onclick="check_arduino_Credentials(event)">Программируй Arduino</a></h3>
                   <p>Вдохни жизнь и разум своей ракете.</p>
               </div>
               <div class="d-flex border-top stats">
@@ -228,7 +228,7 @@
           </div>
           
           <script>
-              function checkCredentials(event) {
+              function check_arduino_Credentials(event) {
                   event.preventDefault(); // Предотвращаем переход по ссылке
           
                   // Запрашиваем email и пароль у пользователя
@@ -236,8 +236,8 @@
                   const password = prompt("Введите ваш пароль:");
           
                   // Правильные данные
-                  const validEmails = ["user1", "user2"];
-                  const validPasswords = ["parol1", "parol2"];
+                  const validEmails = ["user3", "user2"];
+                  const validPasswords = ["parol3", "parol2"];
           
                   // Проверка данных
                   if (validEmails.includes(email) && validPasswords.includes(password)) {
@@ -254,14 +254,14 @@
             <!--Программируй STM32-->
             <div class="course bg-white h-100 align-self-stretch">
               <figure class="m-0">
-                  <a href="#" onclick="checkCredentials(event)">
+                  <a href="#" onclick="check_stm32_Credentials(event)">
                       <img src="images/STM32.jpg" alt="Image" class="img-fluid">
                   </a>
               </figure>
               <div class="course-inner-text py-4 px-4">
                   <span class="course-price">$99</span>
                   <div class="meta"><span class="icon-clock-o"></span>4 Lessons / 12 weeks</div>
-                  <h3><a href="#">Программируй STM32</a></h3>
+                  <h3><a href="#" onclick="check_stm32_Credentials(event)">Программируй STM32</a></h3>
                   <p>Вдохни жизнь и разум своей ракете.</p>
               </div>
               <div class="d-flex border-top stats">
@@ -271,7 +271,7 @@
           </div>
           
           <script>
-              function checkCredentials(event) {
+              function check_stm32_Credentials(event) {
                   event.preventDefault(); // Предотвращаем переход по ссылке
           
                   // Запрашиваем email и пароль у пользователя
@@ -298,14 +298,14 @@
 
           <div class="course bg-white h-100 align-self-stretch">
             <figure class="m-0">
-                <a href="#" onclick="checkCredentials(event)">
+                <a href="#" onclick="check_soldering_Credentials(event)">
                     <img src="images/paika.jpg" alt="Image" class="img-fluid">
                 </a>
             </figure>
             <div class="course-inner-text py-4 px-4">
                 <span class="course-price">$99</span>
                 <div class="meta"><span class="icon-clock-o"></span>4 Lessons / 12 weeks</div>
-                <h3><a href="#">Пайка</a></h3>
+                <h3><a href="#" onclick="check_soldering_Credentials(event)">Пайка</a></h3>
                 <p>Собери свою ракету сам.</p>
             </div>
             <div class="d-flex border-top stats">
@@ -315,7 +315,7 @@
         </div>
         
         <script>
-            function checkCredentials(event) {
+            function check_soldering_Credentials(event) {
                 event.preventDefault(); // Предотвращаем переход по ссылке
         
                 // Запрашиваем email и пароль у пользователя

@@ -44,7 +44,7 @@
       
       <div class="container-fluid">
         <div class="d-flex align-items-center">
-          <div class="site-logo mr-auto w-25"><a href="STM32_course.html" target="_blank">
+          <div class="site-logo mr-auto w-25"><a href="../index.html" target="_blank">
             <img src="../images/logo.svg" alt="MDN logo" width="170px"/>
           </a></div>
 
@@ -52,7 +52,7 @@
             <nav class="site-navigation position-relative text-right" role="navigation">
               <ul class="site-menu main-menu js-clone-nav mx-auto d-none d-lg-block  m-0 p-0">
                 <li><a href="#home-section" class="nav-link">Home</a></li>
-                <li><a href="#courses-section" class="nav-link">Courses</a></li>
+                <li><a href="#STM32_lab-section" class="nav-link">STM32 Lab</a></li>
                 <li><a href="#programs-section" class="nav-link">Programs</a></li>
                 <li><a href="#teachers-section" class="nav-link">Teachers</a></li>
               </ul>
@@ -72,6 +72,9 @@
       
     </header>
 
+
+
+    
     <div class="intro-section" id="home-section">
       
       <div class="slide-1" style="background-image: url('../images/STM32.jpg');" data-stellar-background-ratio="0.5">
@@ -81,65 +84,28 @@
               <div class="row align-items-center">
                 <div class="col-lg-6 mb-4">
                   <h1  data-aos="fade-up" data-aos-delay="100" >BuRockets</h1>
-                  <h1  data-aos="fade-up" data-aos-delay="100">Лабораторные работы c STM32</h1>
+                  <h1  data-aos="fade-up" data-aos-delay="100">Лабораторные работы STM32</h1>
                   <p class="mb-4"  data-aos="fade-up" data-aos-delay="200">STM32 - семейство 32-битных микроконтроллеров </p> 
                   <p class="mb-4"  data-aos="fade-up" data-aos-delay="200">С помощью данного микроконтроллера ты сможешь создать более технологичную ракету</p>
-                  <p data-aos="fade-up" data-aos-delay="300"><a href="#courses-section" class="btn btn-primary py-3 px-5 btn-pill">НАШИ КУРСЫ</a></p>
+                  <p data-aos="fade-up" data-aos-delay="300"><a href="#STM32_lab-section" class="btn btn-primary py-3 px-5 btn-pill">STM32 Lab</a></p>
 
                 </div>
 
 
                 <div class="col-lg-6 ml-auto" data-aos="fade-up" data-aos-delay="500">
                   
-                    <div class="site-logo mr-auto w-25"><a href="../index.html" target="_blank">
+                    <div class="site-logo mr-auto w-25"><a href="STM32_course.html" target="_blank">
                       <img src="../images/logo.svg" alt="MDN logo" width="900px"/>
                     </a></div>
                   
                 </div>
 
 
-                <!--
-                <div class="col-lg-5 ml-auto" data-aos="fade-up" data-aos-delay="500">
-                  <form id="signupForm" class="form-box" onsubmit="return validateForm(event)">
-                      <h3 class="h4 text-black mb-4">Sign Up</h3>
-                      <div class="form-group">
-                          <input type="text" class="form-control" name="email" id="email" placeholder="Email Address" required>
-                      </div>
-                      <div class="form-group">
-                          <input type="password" class="form-control" name="password" id="password" placeholder="Password" required>
-                      </div>
-                      <div class="form-group">
-                          <input type="submit" class="btn btn-primary btn-pill" value="Sign up">
-                      </div>
-                      <div id="error-message" style="color: red; display: none;"></div>
-                  </form>
-              </div>
-              
-              <script>
-                  function validateForm(event) {
-                      event.preventDefault(); // Предотвращаем отправку формы
-              
-                      // Получаем значения email и пароля
-                      const email = document.getElementById('email').value;
-                      const password = document.getElementById('password').value;
-              
-                      // Правильные email и пароли
-                      const validEmails = ['user1', 'user2'];
-                      const validPasswords = ['parol1', 'parol2'];
-              
-                      // Проверяем введенные данные
-                      if (validEmails.includes(email) && validPasswords.includes(password)) {
-                          window.location.href = 'course-single.html'; // Переход на страницу help.html
-                      } else {
-                          // Выводим сообщение об ошибке
-                          const errorMessage = document.getElementById('error-message');
-                          errorMessage.textContent = 'Неправильный email или пароль. Пожалуйста, попробуйте снова.';
-                          errorMessage.style.display = 'block';
-                      }
-                  }
-              </script>
-              
-              -->
+                
+
+
+
+
               </div>
             </div>
             
@@ -148,109 +114,32 @@
       </div>
     </div>
 
-    
+    <div class="site-section courses-title" id="STM32_lab-section">
+        <div class="container">
+            <div class="row mb-10 justify-content-center">
+                <div class="col-lg-7 text-center" data-aos="fade-up" data-aos-delay="">
+                    <h2 class="section-title">STM32 Lab</h2>
+            
+                    <p class="mt-4"><a href="01_git/01_git.html" class="btn btn-primary">01_GIT</a></p>
+                    <p class="mt-4"><a href="02_basics_C/02_basics_C.html" class="btn btn-primary">02_Basics_C</a></p>
+                    <p class="mt-4"><a href="03_blinkled/03_blinkled.html" class="btn btn-primary">03_Blink_Led</a></p>
+
+                    <p class="mt-4"><a href="#" class="btn btn-primary">В начало страницы</a></p>
+                </div>
+            </div>
+        </div>
+      </div>
+   
+    </div>
 
    
 
     
+  <!---->
 
 
 
-    <div class="site-section bg-light" id="contact-section">
-      <div class="container">
-
-        <div class="row justify-content-center">
-          <div class="col-md-7">
-
-
-            
-            <h2 class="section-title mb-3">Message Us</h2>
-            <p class="mb-5">Natus totam voluptatibus animi aspernatur ducimus quas obcaecati mollitia quibusdam temporibus culpa dolore molestias blanditiis consequuntur sunt nisi.</p>
-          
-            <form method="post" data-aos="fade">
-              <div class="form-group row">
-                <div class="col-md-6 mb-3 mb-lg-0">
-                  <input type="text" class="form-control" placeholder="First name">
-                </div>
-                <div class="col-md-6">
-                  <input type="text" class="form-control" placeholder="Last name">
-                </div>
-              </div>
-
-              <div class="form-group row">
-                <div class="col-md-12">
-                  <input type="text" class="form-control" placeholder="Subject">
-                </div>
-              </div>
-
-              <div class="form-group row">
-                <div class="col-md-12">
-                  <input type="email" class="form-control" placeholder="Email">
-                </div>
-              </div>
-              <div class="form-group row">
-                <div class="col-md-12">
-                  <textarea class="form-control" id="" cols="30" rows="10" placeholder="Write your message here."></textarea>
-                </div>
-              </div>
-
-              <div class="form-group row">
-                <div class="col-md-6">
-                  
-                  <input type="submit" class="btn btn-primary py-3 px-5 btn-block btn-pill" value="Send Message">
-                </div>
-              </div>
-
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-    
-     
-    <footer class="footer-section bg-white">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4">
-            <h3>About BuRockets</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro consectetur ut hic ipsum et veritatis corrupti. Itaque eius soluta optio dolorum temporibus in, atque, quos fugit sunt sit quaerat dicta.</p>
-          </div>
-
-          <div class="col-md-3 ml-auto">
-            <h3>Links</h3>
-            <ul class="list-unstyled footer-links">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Courses</a></li>
-              <li><a href="#">Programs</a></li>
-              <li><a href="#">Teachers</a></li>
-            </ul>
-          </div>
-
-          <div class="col-md-4">
-            <h3>Subscribe</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt incidunt iure iusto architecto? Numquam, natus?</p>
-            <form action="#" class="footer-subscribe">
-              <div class="d-flex mb-5">
-                <input type="text" class="form-control rounded-0" placeholder="Email">
-                <input type="submit" class="btn btn-primary rounded-0" value="Subscribe">
-              </div>
-            </form>
-          </div>
-
-        </div>
-
-        <div class="row pt-5 mt-5 text-center">
-          <div class="col-md-12">
-            <div class="border-top pt-5">
-            <p>
-        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-        Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
-        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-      </p>
-            </div>
-          </div>
-          
-        </div>
+        
       </div>
     </footer>
 
