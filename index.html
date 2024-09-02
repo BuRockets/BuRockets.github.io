@@ -44,7 +44,9 @@
       
       <div class="container-fluid">
         <div class="d-flex align-items-center">
-          <div class="site-logo mr-auto w-25"><a href="index.html">BuRockets</a></div>
+          <div class="site-logo mr-auto w-25"><a href="index.html" target="_blank">
+            <img src="images/logo.svg" alt="MDN logo" width="170px"/>
+          </a></div>
 
           <div class="mx-auto text-center">
             <nav class="site-navigation position-relative text-right" role="navigation">
@@ -60,7 +62,7 @@
           <div class="ml-auto w-25">
             <nav class="site-navigation position-relative text-right" role="navigation">
               <ul class="site-menu main-menu site-menu-dark js-clone-nav mr-auto d-none d-lg-block m-0 p-0">
-                <li class="cta"><a href="#contact-section" class="nav-link"><span>Contact Us</span></a></li>
+              <li class="cta"><a href="#contact-section" class="nav-link"><span>Contact Us</span></a></li>
               </ul>
             </nav>
             <a href="#" class="d-inline-block d-lg-none site-menu-toggle js-menu-toggle text-black float-right"><span class="icon-menu h3"></span></a>
@@ -78,30 +80,66 @@
             <div class="col-12">
               <div class="row align-items-center">
                 <div class="col-lg-6 mb-4">
-                  <h1  data-aos="fade-up" data-aos-delay="100">Запускай с нами</h1>
-                  <p class="mb-4"  data-aos="fade-up" data-aos-delay="200">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime ipsa nulla sed quis rerum amet natus quas necessitatibus.</p>
-                  <p data-aos="fade-up" data-aos-delay="300"><a href="#" class="btn btn-primary py-3 px-5 btn-pill">Admission Now</a></p>
+                  <h1  data-aos="fade-up" data-aos-delay="100" >BuRockets</h1>
+                  <h1  data-aos="fade-up" data-aos-delay="100">Запускай ракеты с нами</h1>
+                  <p class="mb-4"  data-aos="fade-up" data-aos-delay="200">BuRockets - это образовательная платформа</p> 
+                  <p class="mb-4"  data-aos="fade-up" data-aos-delay="200">Мы делаем из школьников инженеров</p>
+                  <p data-aos="fade-up" data-aos-delay="300"><a href="#courses-section" class="btn btn-primary py-3 px-5 btn-pill">НАШИ КУРСЫ</a></p>
 
                 </div>
 
+
+                <div class="col-lg-6 ml-auto" data-aos="fade-up" data-aos-delay="500">
+                  
+                    <div class="site-logo mr-auto w-25"><a href="index.html" target="_blank">
+                      <img src="images/logo.svg" alt="MDN logo" width="900px"/>
+                    </a></div>
+                  
+                </div>
+
+
+                <!--
                 <div class="col-lg-5 ml-auto" data-aos="fade-up" data-aos-delay="500">
-                  <form action="" method="post" class="form-box">
-                    <h3 class="h4 text-black mb-4">Sign Up</h3>
-                    <div class="form-group">
-                      <input type="text" class="form-control" placeholder="Email Addresss">
-                    </div>
-                    <div class="form-group">
-                      <input type="password" class="form-control" placeholder="Password">
-                    </div>
-                    <div class="form-group mb-4">
-                      <input type="password" class="form-control" placeholder="Re-type Password">
-                    </div>
-                    <div class="form-group">
-                      <input type="submit" class="btn btn-primary btn-pill" value="Sign up">
-                    </div>
+                  <form id="signupForm" class="form-box" onsubmit="return validateForm(event)">
+                      <h3 class="h4 text-black mb-4">Sign Up</h3>
+                      <div class="form-group">
+                          <input type="text" class="form-control" name="email" id="email" placeholder="Email Address" required>
+                      </div>
+                      <div class="form-group">
+                          <input type="password" class="form-control" name="password" id="password" placeholder="Password" required>
+                      </div>
+                      <div class="form-group">
+                          <input type="submit" class="btn btn-primary btn-pill" value="Sign up">
+                      </div>
+                      <div id="error-message" style="color: red; display: none;"></div>
                   </form>
-
-                </div>
+              </div>
+              
+              <script>
+                  function validateForm(event) {
+                      event.preventDefault(); // Предотвращаем отправку формы
+              
+                      // Получаем значения email и пароля
+                      const email = document.getElementById('email').value;
+                      const password = document.getElementById('password').value;
+              
+                      // Правильные email и пароли
+                      const validEmails = ['user1', 'user2'];
+                      const validPasswords = ['parol1', 'parol2'];
+              
+                      // Проверяем введенные данные
+                      if (validEmails.includes(email) && validPasswords.includes(password)) {
+                          window.location.href = 'course-single.html'; // Переход на страницу help.html
+                      } else {
+                          // Выводим сообщение об ошибке
+                          const errorMessage = document.getElementById('error-message');
+                          errorMessage.textContent = 'Неправильный email или пароль. Пожалуйста, попробуйте снова.';
+                          errorMessage.style.display = 'block';
+                      }
+                  }
+              </script>
+              
+              -->
               </div>
             </div>
             
@@ -110,7 +148,7 @@
       </div>
     </div>
 
-    
+    <!--test-->
     <div class="site-section courses-title" id="courses-section">
       <div class="container">
         <div class="row mb-5 justify-content-center">
@@ -126,59 +164,185 @@
 
           <div class="owl-carousel col-12 nonloop-block-14">
 
+            <!--end Конструируй в Solid Works-->
             <div class="course bg-white h-100 align-self-stretch">
               <figure class="m-0">
-                <a href="course-single.html"><img src="images/solidworks_rocket.jpg" alt="Image" class="img-fluid"></a>
+                  <a href="#" onclick="checkCredentials(event)">
+                      <img src="images/solidworks_rocket.jpg" alt="Image" class="img-fluid">
+                  </a>
               </figure>
               <div class="course-inner-text py-4 px-4">
-                <span class="course-price">$20</span>
-                <div class="meta"><span class="icon-clock-o"></span>4 Lessons / 12 week</div>
-                <h3><a href="#">Конструируй в Solid Works</a></h3>
-                <p>Создай прочную конструкцию ракеты. </p>
+                  <span class="course-price">$99</span>
+                  <div class="meta"><span class="icon-clock-o"></span>4 Lessons / 12 weeks</div>
+                  <h3><a href="#">Конструируй в Solid Works</a></h3>
+                  <p>Создай надежный корпус ракеты.</p>
               </div>
               <div class="d-flex border-top stats">
-                <div class="py-3 px-4"><span class="icon-users"></span> 2,193 students</div>
-                <div class="py-3 px-4 w-25 ml-auto border-left"><span class="icon-chat"></span> 2</div>
+                  <div class="py-3 px-4"><span class="icon-users"></span> 2,193 students</div>
+                  <div class="py-3 px-4 w-25 ml-auto border-left"><span class="icon-chat"></span> 2</div>
               </div>
-            </div>
-
-            <div class="course bg-white h-100 align-self-stretch">
-              <figure class="m-0">
-                <a href="login.html"><img src="images/arduino.jpg" alt="Image" class="img-fluid"></a>
-              </figure>
-              <div class="course-inner-text py-4 px-4">
-                <span class="course-price">$99</span>
-                <div class="meta"><span class="icon-clock-o"></span>4 Lessons / 12 week</div>
-                <h3><a href="#">Прграммируй ARDUINO</a></h3>
-                <p>Вдохни жизнь и разум своей ракете. </p>
-              </div>
-              <div class="d-flex border-top stats">
-                <div class="py-3 px-4"><span class="icon-users"></span> 2,193 students</div>
-                <div class="py-3 px-4 w-25 ml-auto border-left"><span class="icon-chat"></span> 2</div>
-              </div>
-            </div>
-
-            <div class="course bg-white h-100 align-self-stretch">
-              <figure class="m-0">
-                <a href="course-single.html"><img src="images/paika.jpg" alt="Image" class="img-fluid"></a>
-              </figure>
-              <div class="course-inner-text py-4 px-4">
-                <span class="course-price">$99</span>
-                <div class="meta"><span class="icon-clock-o"></span>4 Lessons / 12 week</div>
-                <h3><a href="#">Паяй красиво</a></h3>
-                <p>Паяй правильно. </p>
-              </div>
-              <div class="d-flex border-top stats">
-                <div class="py-3 px-4"><span class="icon-users"></span> 2,193 students</div>
-                <div class="py-3 px-4 w-25 ml-auto border-left"><span class="icon-chat"></span> 2</div>
-              </div>
-            </div>
-
           </div>
+          
+          <script>
+              function checkCredentials(event) {
+                  event.preventDefault(); // Предотвращаем переход по ссылке
+          
+                  // Запрашиваем email и пароль у пользователя
+                  const email = prompt("Введите ваш email:");
+                  const password = prompt("Введите ваш пароль:");
+          
+                  // Правильные данные
+                  const validEmails = ["user1", "user2"];
+                  const validPasswords = ["parol1", "parol2"];
+          
+                  // Проверка данных
+                  if (validEmails.includes(email) && validPasswords.includes(password)) {
+                      // Если данные верные, переходим на страницу
+                      window.location.href = "SolidWorks_course.html";
+                  } else {
+                      // Если данные неверные, выводим сообщение об ошибке
+                      alert("Неправильный email или пароль. Пожалуйста, попробуйте снова.");
+                  }
+              }
+          </script>
 
-         
+            <!--end Конструируй в Solid Works-->
+
+            <!--Программируй ARDUINO-->
+            <div class="course bg-white h-100 align-self-stretch">
+              <figure class="m-0">
+                  <a href="#" onclick="checkCredentials(event)">
+                      <img src="images/arduino.jpg" alt="Image" class="img-fluid">
+                  </a>
+              </figure>
+              <div class="course-inner-text py-4 px-4">
+                  <span class="course-price">$99</span>
+                  <div class="meta"><span class="icon-clock-o"></span>4 Lessons / 12 weeks</div>
+                  <h3><a href="#">Программируй Arduino</a></h3>
+                  <p>Вдохни жизнь и разум своей ракете.</p>
+              </div>
+              <div class="d-flex border-top stats">
+                  <div class="py-3 px-4"><span class="icon-users"></span> 2,193 students</div>
+                  <div class="py-3 px-4 w-25 ml-auto border-left"><span class="icon-chat"></span> 2</div>
+              </div>
+          </div>
+          
+          <script>
+              function checkCredentials(event) {
+                  event.preventDefault(); // Предотвращаем переход по ссылке
+          
+                  // Запрашиваем email и пароль у пользователя
+                  const email = prompt("Введите ваш email:");
+                  const password = prompt("Введите ваш пароль:");
+          
+                  // Правильные данные
+                  const validEmails = ["user1", "user2"];
+                  const validPasswords = ["parol1", "parol2"];
+          
+                  // Проверка данных
+                  if (validEmails.includes(email) && validPasswords.includes(password)) {
+                      // Если данные верные, переходим на страницу
+                      window.location.href = "STM32/STM32_course.html";
+                  } else {
+                      // Если данные неверные, выводим сообщение об ошибке
+                      alert("Неправильный email или пароль. Пожалуйста, попробуйте снова.");
+                  }
+              }
+          </script>
+            <!--end Программируй ARDUINO-->
+
+            <!--Программируй STM32-->
+            <div class="course bg-white h-100 align-self-stretch">
+              <figure class="m-0">
+                  <a href="#" onclick="checkCredentials(event)">
+                      <img src="images/STM32.jpg" alt="Image" class="img-fluid">
+                  </a>
+              </figure>
+              <div class="course-inner-text py-4 px-4">
+                  <span class="course-price">$99</span>
+                  <div class="meta"><span class="icon-clock-o"></span>4 Lessons / 12 weeks</div>
+                  <h3><a href="#">Программируй STM32</a></h3>
+                  <p>Вдохни жизнь и разум своей ракете.</p>
+              </div>
+              <div class="d-flex border-top stats">
+                  <div class="py-3 px-4"><span class="icon-users"></span> 2,193 students</div>
+                  <div class="py-3 px-4 w-25 ml-auto border-left"><span class="icon-chat"></span> 2</div>
+              </div>
+          </div>
+          
+          <script>
+              function checkCredentials(event) {
+                  event.preventDefault(); // Предотвращаем переход по ссылке
+          
+                  // Запрашиваем email и пароль у пользователя
+                  const email = prompt("Введите ваш email:");
+                  const password = prompt("Введите ваш пароль:");
+          
+                  // Правильные данные
+                  const validEmails = ["user1", "user2"];
+                  const validPasswords = ["parol1", "parol2"];
+          
+                  // Проверка данных
+                  if (validEmails.includes(email) && validPasswords.includes(password)) {
+                      // Если данные верные, переходим на страницу
+                      window.location.href = "STM32/STM32_course.html";
+                  } else {
+                      // Если данные неверные, выводим сообщение об ошибке
+                      alert("Неправильный email или пароль. Пожалуйста, попробуйте снова.");
+                  }
+              }
+          </script>
+          <!--end Программируй STM32-->
+
+          <!--Пайка-->
+
+          <div class="course bg-white h-100 align-self-stretch">
+            <figure class="m-0">
+                <a href="#" onclick="checkCredentials(event)">
+                    <img src="images/paika.jpg" alt="Image" class="img-fluid">
+                </a>
+            </figure>
+            <div class="course-inner-text py-4 px-4">
+                <span class="course-price">$99</span>
+                <div class="meta"><span class="icon-clock-o"></span>4 Lessons / 12 weeks</div>
+                <h3><a href="#">Пайка</a></h3>
+                <p>Собери свою ракету сам.</p>
+            </div>
+            <div class="d-flex border-top stats">
+                <div class="py-3 px-4"><span class="icon-users"></span> 2,193 students</div>
+                <div class="py-3 px-4 w-25 ml-auto border-left"><span class="icon-chat"></span> 2</div>
+            </div>
+        </div>
+        
+        <script>
+            function checkCredentials(event) {
+                event.preventDefault(); // Предотвращаем переход по ссылке
+        
+                // Запрашиваем email и пароль у пользователя
+                const email = prompt("Введите ваш email:");
+                const password = prompt("Введите ваш пароль:");
+        
+                // Правильные данные
+                const validEmails = ["user1", "user2"];
+                const validPasswords = ["parol1", "parol2"];
+        
+                // Проверка данных
+                if (validEmails.includes(email) && validPasswords.includes(password)) {
+                    // Если данные верные, переходим на страницу
+                    window.location.href = "STM32/STM32_course.html";
+                } else {
+                    // Если данные неверные, выводим сообщение об ошибке
+                    alert("Неправильный email или пароль. Пожалуйста, попробуйте снова.");
+                }
+            }
+        </script>
+          <!--end Пайка-->
+
 
         </div>
+        </div>
+        </div>
+      </div>
         <div class="row justify-content-center">
           <div class="col-7 text-center">
             <button class="customPrevBtn btn btn-primary m-1">Prev</button>
@@ -188,7 +352,7 @@
       </div>
     </div>
 
-
+    <!--test-->
     <div class="site-section" id="programs-section">
       <div class="container">
         <div class="row mb-5 justify-content-center">

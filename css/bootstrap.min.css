@@ -1998,15 +1998,15 @@ fieldset:disabled a.btn {
 
 .btn-primary {
   color: #fff;
-  background-color: #7971ea;
-  border-color: #7971ea; }
+  background-color: #054597ff;
+  border-color: #054597ff; }
   .btn-primary:hover {
     color: #fff;
-    background-color: #5a50e5;
-    border-color: #4f45e3; }
+    background-color: #e30613;
+    border-color: #e34545; }
   .btn-primary:focus, .btn-primary.focus {
-    -webkit-box-shadow: 0 0 0 0.2rem rgba(121, 113, 234, 0.5);
-    box-shadow: 0 0 0 0.2rem rgba(121, 113, 234, 0.5); }
+    -webkit-box-shadow: 0 0 0 0.2rem rgba(222, 31, 66, 0.5);
+    box-shadow: 0 0 0 0.2rem rgba(227, 24, 34, 0.5); }
   .btn-primary.disabled, .btn-primary:disabled {
     color: #fff;
     background-color: #7971ea;
