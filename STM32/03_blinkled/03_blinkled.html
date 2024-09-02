@@ -196,11 +196,11 @@
                     Зачастую на схемах питание обозначается буквами <code>Vсс</code> или конкретно номиналом <code>3V3</code>, <code>5V0</code>, земля же может обозначаться как <code>Vss</code> или <code>GND</code> </p>
                     </blockquote>
                     <p>Рассмотрим теперь нижний светодиод, которым мы хотим поморгать, ток через него будет течь только в том случае, если в точке <strong><em>1</em></strong> будет напряжение меньше чем 3V3, в нашем случае GND, возьмем это на вооружение.</p>
-                    <p><img src="./images/leds.png" alt=""></p>
+                    <p><img src="./images/leds.png" class="img-lab" alt=""></p>
                     <p>Заметим, что точка <strong><em>1</em></strong> подключена к ножке PC13 микроконтроллера (в дальнейшем для краткости мк).</p>
                     <p>Настроим ножку как GPIO_Output, вкратце данный режим позволит нам подтягивать (подключать) ножку либо к питанию, либо к земле, тем самым включать и выключать светодиод.</p>
-                    <p><img src="./images/GPIO_output.png" alt=""></p>
-                    <p><img src="./images/GPIO_input.png" alt=""></p>
+                    <p><img src="./images/GPIO_output.png" class="img-lab" alt=""></p>
+                    <p><img src="./images/GPIO_input.png" class="img-lab" alt=""></p>
                     <p>Теперь настроим GPIO:</p>
                     <p>⇒ <strong>System Core</strong> ⇒ <strong>GPIO</strong></p>
                     <p>Выставим:</p>
@@ -208,11 +208,11 @@
                     <li><strong>GPIO output level</strong> == High</li>
                     <li><strong>User label</strong> == led</li>
                     </ul>
-                    <p><img src="./images/led_config_1.png" width="360" height="300"></p>
+                    <p><img src="./images/led_config_1.png" class="img-lab" width="360" height="300"></p>
                     <p><br></p>
-                    <p><img src="./images/led_config_2.png" width="360" height="300"></p>
+                    <p><img src="./images/led_config_2.png" class="img-lab" width="360" height="300"></p>
                     <p><br></p>
-                    <p>Теперь, после настройки ножек мк, нажимаем на шестеренку <img src="./images/gear.png" alt=""> в верхней панели, тем самым CubeIde сгенерирует код на языке си, где уже будет прописано все, что мы выставили ранее.</p>
+                    <p>Теперь, после настройки ножек мк, нажимаем на шестеренку <img src="./images/gear.png" class="img-lab" alt=""> в верхней панели, тем самым CubeIde сгенерирует код на языке си, где уже будет прописано все, что мы выставили ранее.</p>
                     <p>В левой части экрана ... НАДО ПИСАТЬ ДАЛЬШЕ !!!</p>
                     <p>Генератор кода вызвал функции инициализации тактирования и GPIO. </p>
                     <pre><code><span class="hljs-comment">/* Private function prototypes -----------------------------------------------*/</span>
