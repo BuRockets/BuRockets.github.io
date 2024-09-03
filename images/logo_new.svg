@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="uuid-b678750e-c095-492e-9db8-db97f73ee52c" data-name="logo" xmlns="http://www.w3.org/2000/svg" width="537.28" height="238" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 537.28 238">
+  <defs>
+    <style>
+      .uuid-ce8e4458-6bb1-47cc-aef7-3f50f1d8eb25 {
+        fill: #fff;
+      }
+
+      .uuid-611dc9bc-9110-43ad-8cae-4d54f6e81f66, .uuid-f84e2a2a-1751-47c1-b619-bfaeb0e1f6e6, .uuid-4fb58bf9-1672-4239-a99d-29d7167a6433, .uuid-3d9f3b0a-17a4-42f0-be63-b98c5e382a18, .uuid-224ad90a-1750-4f63-ad51-c1a4204859d8 {
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: .5px;
+      }
+
+      .uuid-611dc9bc-9110-43ad-8cae-4d54f6e81f66, .uuid-898b8f00-8d60-4af4-aab2-5cf0d001505a {
+        fill: #e30613;
+      }
+
+      .uuid-611dc9bc-9110-43ad-8cae-4d54f6e81f66, .uuid-4fb58bf9-1672-4239-a99d-29d7167a6433 {
+        stroke: #e30613;
+      }
+
+      .uuid-f84e2a2a-1751-47c1-b619-bfaeb0e1f6e6 {
+        fill: #c81c1b;
+        stroke: #c81c1b;
+      }
+
+      .uuid-a3761ba4-f1ac-4fda-89f2-fbd0a3fbfb18 {
+        fill: url(#uuid-63a7f75f-cd24-4aca-82f0-8c903d7d0110);
+      }
+
+      .uuid-4fb58bf9-1672-4239-a99d-29d7167a6433 {
+        fill: none;
+      }
+
+      .uuid-3d9f3b0a-17a4-42f0-be63-b98c5e382a18 {
+        fill: #d7161d;
+        stroke: #d7161d;
+      }
+
+      .uuid-50c7b53e-f3cf-4501-bfbc-7367de298722 {
+        fill: url(#uuid-8412d901-3b6f-45d6-a26c-e321f82277c9);
+      }
+
+      .uuid-224ad90a-1750-4f63-ad51-c1a4204859d8 {
+        fill: #c81c1a;
+        stroke: #c81c1a;
+      }
+    </style>
+    <radialGradient id="uuid-8412d901-3b6f-45d6-a26c-e321f82277c9" data-name="Безымянный градиент 20" cx="200.7" cy="131.4" fx="246.23" fy="92.65" r="59.78" gradientTransform="translate(-54.32 93.89) rotate(-30.5) scale(1 1.23)" gradientUnits="userSpaceOnUse">
+      <stop offset=".48" stop-color="#0b4697"/>
+      <stop offset=".56" stop-color="#093e88"/>
+      <stop offset=".71" stop-color="#062b63"/>
+      <stop offset=".92" stop-color="#020d28"/>
+      <stop offset="1" stop-color="#00000f"/>
+    </radialGradient>
+    <radialGradient id="uuid-63a7f75f-cd24-4aca-82f0-8c903d7d0110" data-name="Безымянный градиент 249" cx="204.4" cy="132.62" fx="211.2" fy="132.62" r="12.25" gradientUnits="userSpaceOnUse">
+      <stop offset=".29" stop-color="#e73532"/>
+      <stop offset=".55" stop-color="#e53230"/>
+      <stop offset=".66" stop-color="#e12b2a"/>
+      <stop offset=".74" stop-color="#d91f1f"/>
+      <stop offset=".76" stop-color="#d71b1c"/>
+    </radialGradient>
+  </defs>
+  <rect class="uuid-ce8e4458-6bb1-47cc-aef7-3f50f1d8eb25" x="81.64" y="9" width="210" height="210"/>
+  <g>
+    <path class="uuid-898b8f00-8d60-4af4-aab2-5cf0d001505a" d="m225.64,183.26l8.45-2.45c-8.57,8.33-125.95,36.64-117.49-44.25,8.45-80.9,104.17-98.8,104.17-98.8,0,0-94.22,22.97-91.15,96.76,3.06,73.79,96.02,48.74,96.02,48.74Z"/>
+    <path class="uuid-4fb58bf9-1672-4239-a99d-29d7167a6433" d="m234.09,180.81c-8.57,8.33-125.95,36.64-117.49-44.25,8.45-80.9,104.17-98.8,104.17-98.8,0,0-94.22,22.97-91.15,96.76,3.06,73.79,96.02,48.74,96.02,48.74l8.45-2.45Z"/>
+  </g>
+  <circle class="uuid-50c7b53e-f3cf-4501-bfbc-7367de298722" cx="192.19" cy="124.59" r="46.98"/>
+  <path class="uuid-611dc9bc-9110-43ad-8cae-4d54f6e81f66" d="m220.13,33s5.12,1.16,8.52,2.35c-2.55,4.6-4.82,10.16-4.82,10.16l25.19-14.25-28.89,1.74Z"/>
+  <path class="uuid-611dc9bc-9110-43ad-8cae-4d54f6e81f66" d="m213.5,81.57s59.83-24.52,69.23-18.31-2.37,22.42-63.48,60.72l-.29-.07c-.53-.4-.62-.89-.45-1.54l.11-.22c44.6-27.91,62.5-46.55,56.45-53.52-3.23-3.73-14.15-.62-24,1.91-8.46,2.18-31.33,10.46-35.4,11.93-.14.05-.28.04-.41-.02l-1.75-.88Z"/>
+  <path class="uuid-611dc9bc-9110-43ad-8cae-4d54f6e81f66" d="m115.21,147.72c.02.34-.12.66-.39.87-3.76,2.95-23.35,19.62-20.35,25.47,3.27,6.37,21.35.98,28.32-1.06.2-.06.4,0,.54.16l.76.89c.17.19.1.49-.13.59-4.12,1.78-34.12,14.45-35.7,6.05-1.16-6.16,4.06-13.87,12.68-22,3.74-3.53,8.85-8.01,13.64-11.86.24-.19.6-.03.61.28l.02.59Z"/>
+  <path class="uuid-611dc9bc-9110-43ad-8cae-4d54f6e81f66" d="m142.34,167.48c.21.24.54.32.83.2,3.56-1.48,25.94-10.89,41.87-20.21.36-.21.46-.69.22-1.04l-.18-.26c-.22-.32-.66-.42-1-.23-21.7,12.12-39.17,18.04-42.85,19.22-.34.11-.45.53-.21.8l1.32,1.52Z"/>
+  <path class="uuid-611dc9bc-9110-43ad-8cae-4d54f6e81f66" d="m130.68,134.33s2.89-2.95,6.1-5.61,6.92-5.97,7.52-6.39l.08,2.39c-7.15,5.24-13.55,11.16-13.55,11.16l-.14-1.55Z"/>
+  <path class="uuid-f84e2a2a-1751-47c1-b619-bfaeb0e1f6e6" d="m194.14,134.53l-9.15,3.11,8.97-5.53s-.01.18,0,.62c.01.38.04.95.17,1.79Z"/>
+  <polyline class="uuid-224ad90a-1750-4f63-ad51-c1a4204859d8" points="201.21 142.89 192.19 150.97 198.62 141.81"/>
+  <polyline class="uuid-3d9f3b0a-17a4-42f0-be63-b98c5e382a18" points="212.59 139.07 195.11 162.12 205.15 143.24"/>
+  <path class="uuid-3d9f3b0a-17a4-42f0-be63-b98c5e382a18" d="m201.03,122.45c-12.37,4.51-15.25,5.43-27.62,9.94l22.5-5.32"/>
+  <ellipse class="uuid-a3761ba4-f1ac-4fda-89f2-fbd0a3fbfb18" cx="204.4" cy="132.62" rx="10.56" ry="11"/>
+  <ellipse class="uuid-ce8e4458-6bb1-47cc-aef7-3f50f1d8eb25" cx="207.51" cy="126.06" rx="1.48" ry="2.81" transform="translate(-11.36 231.17) rotate(-56.93)"/>
+</svg>
