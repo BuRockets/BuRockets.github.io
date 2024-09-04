@@ -16,11 +16,20 @@
     <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
     <link rel="stylesheet" href="css/aos.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
     <style>
         * {
               box-sizing: border-box;
           }
+
+          h1, h2, h3, h4, h5,
+        .h1, .h2, .h3, .h4, .h5 {
+            margin-top: 40px;
+          color: #054597ff;
+          text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+          font-family: "Muli", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; }
+          
 
           html, body {
               overflow-x: hidden; /* Скрыть горизонтальную прокрутку */
@@ -36,7 +45,27 @@
               padding-right: 15px;
           }
 
-          
+          .btn-primary span {
+              color: white; /* Устанавливаем белый цвет текста */
+          }
+
+          .social-icons {
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+          }
+          .social-icon {
+              font-size: 40px;
+              margin: 0 20px;
+              transition: transform 0.3s, color 0.3s;
+          }
+          .social-icon:hover {
+              transform: scale(1.2);
+              color: #007bff; /* Цвет при наведении */
+          }
+          .social-icon:hover img {
+            transform: scale(1.2);
+        }
 
           /* Примените медиа-запросы для мобильных устройств */
           @media (max-width: 768px) {
@@ -83,7 +112,7 @@
           <div class="ml-auto w-25">
             <nav class="site-navigation position-relative text-right" role="navigation">
               <ul class="site-menu main-menu site-menu-dark js-clone-nav mr-auto d-none d-lg-block m-0 p-0">
-              <li class="cta"><a href="#contact-section" class="nav-link"><span>Contact Us</span></a></li>
+              <li data-aos="fade-up" data-aos-delay="300"><a href="#contact-section" class="btn btn-primary py-3 px-4 btn-pill"><span>Contact Us</span></a></li>
               </ul>
             </nav>
             <a href="#" class="d-inline-block d-lg-none site-menu-toggle js-menu-toggle text-black float-right"><span class="icon-menu h3"></span></a>
@@ -204,28 +233,7 @@
               </div>
           </div>
           
-          <script>
-              function check_solidworks_Credentials(event) {
-                  event.preventDefault(); // Предотвращаем переход по ссылке
-          
-                  // Запрашиваем email и пароль у пользователя
-                  const email = prompt("Введите ваш email:");
-                  const password = prompt("Введите ваш пароль:");
-          
-                  // Правильные данные
-                  const validEmails = ["user1", "user2"];
-                  const validPasswords = ["parol1", "parol2"];
-          
-                  // Проверка данных
-                  if (validEmails.includes(email) && validPasswords.includes(password)) {
-                      // Если данные верные, переходим на страницу
-                      window.location.href = "SolidWorks_course.html";
-                  } else {
-                      // Если данные неверные, выводим сообщение об ошибке
-                      alert("Неправильный email или пароль. Пожалуйста, попробуйте снова.");
-                  }
-              }
-          </script>
+
 
             <!--end Конструируй в Solid Works-->
 
@@ -247,29 +255,7 @@
                   <div class="py-3 px-4 w-25 ml-auto border-left"><span class="icon-chat"></span> 2</div>
               </div>
           </div>
-          
-          <script>
-              function check_arduino_Credentials(event) {
-                  event.preventDefault(); // Предотвращаем переход по ссылке
-          
-                  // Запрашиваем email и пароль у пользователя
-                  const email = prompt("Введите ваш email:");
-                  const password = prompt("Введите ваш пароль:");
-          
-                  // Правильные данные
-                  const validEmails = ["user3", "user2"];
-                  const validPasswords = ["parol3", "parol2"];
-          
-                  // Проверка данных
-                  if (validEmails.includes(email) && validPasswords.includes(password)) {
-                      // Если данные верные, переходим на страницу
-                      window.location.href = "STM32/STM32_course.html";
-                  } else {
-                      // Если данные неверные, выводим сообщение об ошибке
-                      alert("Неправильный email или пароль. Пожалуйста, попробуйте снова.");
-                  }
-              }
-          </script>
+
             <!--end Программируй ARDUINO-->
 
             <!--Программируй STM32-->
@@ -291,28 +277,7 @@
               </div>
           </div>
           
-          <script>
-              function check_stm32_Credentials(event) {
-                  event.preventDefault(); // Предотвращаем переход по ссылке
-          
-                  // Запрашиваем email и пароль у пользователя
-                  const email = prompt("Введите ваш email:");
-                  const password = prompt("Введите ваш пароль:");
-          
-                  // Правильные данные
-                  const validEmails = ["user1", "user2"];
-                  const validPasswords = ["parol1", "parol2"];
-          
-                  // Проверка данных
-                  if (validEmails.includes(email) && validPasswords.includes(password)) {
-                      // Если данные верные, переходим на страницу
-                      window.location.href = "STM32/STM32_course.html";
-                  } else {
-                      // Если данные неверные, выводим сообщение об ошибке
-                      alert("Неправильный email или пароль. Пожалуйста, попробуйте снова.");
-                  }
-              }
-          </script>
+
           <!--end Программируй STM32-->
 
           <!--Пайка-->
@@ -335,28 +300,7 @@
             </div>
         </div>
         
-        <script>
-            function check_soldering_Credentials(event) {
-                event.preventDefault(); // Предотвращаем переход по ссылке
         
-                // Запрашиваем email и пароль у пользователя
-                const email = prompt("Введите ваш email:");
-                const password = prompt("Введите ваш пароль:");
-        
-                // Правильные данные
-                const validEmails = ["user1", "user2"];
-                const validPasswords = ["parol1", "parol2"];
-        
-                // Проверка данных
-                if (validEmails.includes(email) && validPasswords.includes(password)) {
-                    // Если данные верные, переходим на страницу
-                    window.location.href = "STM32/STM32_course.html";
-                } else {
-                    // Если данные неверные, выводим сообщение об ошибке
-                    alert("Неправильный email или пароль. Пожалуйста, попробуйте снова.");
-                }
-            }
-        </script>
           <!--end Пайка-->
 
 
@@ -364,14 +308,106 @@
         </div>
         </div>
       </div>
+      <!--
         <div class="row justify-content-center">
-          <div class="col-7 text-center">
+          <div class="col-12 text-center">
             <button class="customPrevBtn btn btn-primary m-1">Prev</button>
             <button class="customNextBtn btn btn-primary m-1">Next</button>
           </div>
         </div>
+        -->
       </div>
     </div>
+
+    <script>
+      function check_solidworks_Credentials(event) {
+            event.preventDefault(); // Предотвращаем переход по ссылке
+    
+            // Запрашиваем email и пароль у пользователя
+            const email = prompt("Введите ваш email:");
+            const password = prompt("Введите ваш пароль:");
+    
+            // Правильные данные
+            const validEmails = ["user1", "user2"];
+            const validPasswords = ["parol1", "parol2"];
+    
+            // Проверка данных
+            if (validEmails.includes(email) && validPasswords.includes(password)) {
+                // Если данные верные, переходим на страницу
+                window.location.href = "SolidWorks_course.html";
+            } else {
+                // Если данные неверные, выводим сообщение об ошибке
+                alert("Неправильный email или пароль. Пожалуйста, попробуйте снова.");
+            }
+        }
+
+        function check_stm32_Credentials(event) {
+            event.preventDefault(); // Предотвращаем переход по ссылке
+    
+            // Запрашиваем email и пароль у пользователя
+            const email = prompt("Введите ваш email:");
+            const password = prompt("Введите ваш пароль:");
+    
+            // Правильные данные
+            const validEmails = ["user1", "user2"];
+            const validPasswords = ["parol1", "parol2"];
+    
+            // Проверка данных
+            if (validEmails.includes(email) && validPasswords.includes(password)) {
+                // Если данные верные, переходим на страницу
+                window.location.href = "STM32/STM32_course.html";
+            } else {
+                // Если данные неверные, выводим сообщение об ошибке
+                alert("Неправильный email или пароль. Пожалуйста, попробуйте снова.");
+            }
+        }
+
+        function check_arduino_Credentials(event) {
+            event.preventDefault(); // Предотвращаем переход по ссылке
+    
+            // Запрашиваем email и пароль у пользователя
+            const email = prompt("Введите ваш email:");
+            const password = prompt("Введите ваш пароль:");
+    
+            // Правильные данные
+            const validEmails = ["user3", "user2"];
+            const validPasswords = ["parol3", "parol2"];
+    
+            // Проверка данных
+            if (validEmails.includes(email) && validPasswords.includes(password)) {
+                // Если данные верные, переходим на страницу
+                window.location.href = "STM32/STM32_course.html";
+            } else {
+                // Если данные неверные, выводим сообщение об ошибке
+                alert("Неправильный email или пароль. Пожалуйста, попробуйте снова.");
+            }
+        }
+
+
+      
+
+
+      function check_soldering_Credentials(event) {
+          event.preventDefault(); // Предотвращаем переход по ссылке
+  
+          // Запрашиваем email и пароль у пользователя
+          const email = prompt("Введите ваш email:");
+          const password = prompt("Введите ваш пароль:");
+  
+          // Правильные данные
+          const validEmails = ["user1", "user2"];
+          const validPasswords = ["parol1", "parol2"];
+  
+          // Проверка данных
+          if (validEmails.includes(email) && validPasswords.includes(password)) {
+              // Если данные верные, переходим на страницу
+              window.location.href = "STM32/STM32_course.html";
+          } else {
+              // Если данные неверные, выводим сообщение об ошибке
+              alert("Неправильный email или пароль. Пожалуйста, попробуйте снова.");
+          }
+      }
+  </script>
 
     <!--test-->
     <div class="site-section" id="programs-section">
@@ -573,55 +609,35 @@
     </div>
 
     
-
-
-
+<!--contact us-->
+    
+<!--contact us-->
     <div class="site-section bg-light" id="contact-section">
-      <div class="container">
-
+      <div class=".container-hluid">
         <div class="row justify-content-center">
           <div class="col-md-7">
 
-
-            
-            <h2 class="section-title mb-3">Message Us</h2>
-            <p class="mb-5">Natus totam voluptatibus animi aspernatur ducimus quas obcaecati mollitia quibusdam temporibus culpa dolore molestias blanditiis consequuntur sunt nisi.</p>
-          
-            <form method="post" data-aos="fade">
-              <div class="form-group row">
-                <div class="col-md-6 mb-3 mb-lg-0">
-                  <input type="text" class="form-control" placeholder="First name">
-                </div>
-                <div class="col-md-6">
-                  <input type="text" class="form-control" placeholder="Last name">
-                </div>
-              </div>
-
-              <div class="form-group row">
-                <div class="col-md-12">
-                  <input type="text" class="form-control" placeholder="Subject">
-                </div>
-              </div>
-
-              <div class="form-group row">
-                <div class="col-md-12">
-                  <input type="email" class="form-control" placeholder="Email">
-                </div>
-              </div>
-              <div class="form-group row">
-                <div class="col-md-12">
-                  <textarea class="form-control" id="" cols="30" rows="10" placeholder="Write your message here."></textarea>
-                </div>
-              </div>
-
-              <div class="form-group row">
-                <div class="col-md-6">
+            <div class="container">
+              <div class="social-icons">
+                  <a href="https://t.me/burockets" target="_blank" class="social-icon">
+                      <i class="fab fa-telegram-plane"></i>
+                  </a>
+                  <a href="https://vk.com/egobun" target="_blank" class="social-icon">
+                      <i class="fab fa-vk"></i>
+                  </a>
+                  <a href="https://www.youtube.com/@egorbunakov" target="_blank" class="social-icon">
+                      <i class="fab fa-youtube"></i>
+                  </a>
                   
-                  <input type="submit" class="btn btn-primary py-3 px-5 btn-block btn-pill" value="Send Message">
-                </div>
               </div>
-
-            </form>
+          </div>
+          
+          <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+          <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+          <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+            
+            
+            
           </div>
         </div>
       </div>
@@ -632,12 +648,12 @@
       <div class="container">
         <div class="row">
           <div class="col-md-4">
-            <h3>About BuRockets</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro consectetur ut hic ipsum et veritatis corrupti. Itaque eius soluta optio dolorum temporibus in, atque, quos fugit sunt sit quaerat dicta.</p>
+            <h3>Кто такие BuRockets</h3>
+            <p>BuRockets - РАКЕТОСТРОИТЕЛИ. Мы создаем ракеты и помогаем сделать это маленьким будующим инженерам.</p>
           </div>
 
           <div class="col-md-3 ml-auto">
-            <h3>Links</h3>
+            <h3>Ссылки</h3>
             <ul class="list-unstyled footer-links">
               <li><a href="#">Home</a></li>
               <li><a href="#">Courses</a></li>
