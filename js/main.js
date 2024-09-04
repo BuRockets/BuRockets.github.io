@@ -4,6 +4,20 @@
  	once: false
  });
 
+ function openModal(img) {
+    var modal = document.getElementById("modal");
+    var modalImg = document.getElementById("img01");
+    modal.style.display = "flex";
+	
+    modalImg.src = img.src;
+}
+
+function closeModal() {
+    var modal = document.getElementById("modal");
+    modal.style.display = "none";
+}
+
+
 jQuery(document).ready(function($) {
 
 	"use strict";

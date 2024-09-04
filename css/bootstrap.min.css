@@ -477,6 +477,13 @@ pre {
   margin-right: auto;
   margin-left: auto; }
 
+.container-hluid {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 45px;
+  margin-right: auto;
+  margin-left: auto; }
+
 .row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2022,6 +2029,8 @@ fieldset:disabled a.btn {
     .show > .btn-primary.dropdown-toggle:focus {
       -webkit-box-shadow: 0 0 0 0.2rem rgba(121, 113, 234, 0.5);
       box-shadow: 0 0 0 0.2rem rgba(121, 113, 234, 0.5); }
+
+
 
 .btn-secondary {
   color: #fff;
@@ -4375,6 +4384,13 @@ input[type="button"].btn-block {
     border-color: #1b1e21; }
 
 .close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+
+  font-size: 40px;
+  font-weight: bold;
+
   float: right;
   font-size: 1.5rem;
   font-weight: 700;
@@ -4402,6 +4418,18 @@ button.close {
     overflow-y: auto; }
 
 .modal {
+  display: none;
+  
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.9);
+  
   position: fixed;
   top: 0;
   right: 0;
@@ -4409,7 +4437,11 @@ button.close {
   left: 0;
   z-index: 1050;
   display: none;
-  overflow: hidden;
+
+  justify-content: center; /* Центрирование по горизонтали */
+  align-items: center; /* Центрирование по вертикали */
+  display: flex; /* Используем flexbox для центрирования */
+
   outline: 0; }
 
 .modal-dialog {
@@ -4450,6 +4482,11 @@ button.close {
     content: ""; }
 
 .modal-content {
+  margin: auto;
+
+  width: auto;
+  max-width: 80%;
+
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4458,7 +4495,7 @@ button.close {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  width: 100%;
+
   pointer-events: auto;
   background-color: #fff;
   background-clip: padding-box;
