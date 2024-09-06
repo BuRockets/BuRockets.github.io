@@ -25,11 +25,21 @@
     <link rel="stylesheet" href="../css/aos.css">
 
     <link rel="stylesheet" href="../css/style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     
     <style>
         * {
               box-sizing: border-box;
           }
+
+          h1, h2, h3, h4, h5,
+        .h1, .h2, .h3, .h4, .h5 {
+            margin-top: 40px;
+          color: #054597ff;
+          text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+          font-family: "Muli", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; }
+          
 
           html, body {
               overflow-x: hidden; /* Скрыть горизонтальную прокрутку */
@@ -45,6 +55,27 @@
               padding-right: 15px;
           }
 
+          .btn-primary span {
+              color: white; /* Устанавливаем белый цвет текста */
+          }
+
+          .social-icons {
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+          }
+          .social-icon {
+              font-size: 40px;
+              margin: 0 20px;
+              transition: transform 0.3s, color 0.3s;
+          }
+          .social-icon:hover {
+              transform: scale(1.2);
+              color: #007bff; /* Цвет при наведении */
+          }
+          .social-icon:hover img {
+            transform: scale(1.2);
+        }
           
 
           /* Примените медиа-запросы для мобильных устройств */
@@ -83,7 +114,7 @@
               <ul class="site-menu main-menu js-clone-nav mx-auto d-none d-lg-block  m-0 p-0">
                 <li><a href="#home-section" class="nav-link">Главная</a></li>
                 <li><a href="#STM32_lab-section" class="nav-link">STM32 Lab</a></li>
-                <li><a href="#programs-section" class="nav-link">Программы</a></li>
+                <!--<li><a href="#programs-section" class="nav-link">Программы</a></li>-->
                 <li><a href="#teachers-section" class="nav-link">Преподаватели</a></li>
               </ul>
             </nav>
@@ -92,7 +123,7 @@
           <div class="ml-auto w-25">
             <nav class="site-navigation position-relative text-right" role="navigation">
               <ul class="site-menu main-menu site-menu-dark js-clone-nav mr-auto d-none d-lg-block m-0 p-0">
-              <li class="cta"><a href="#contact-section" class="nav-link"><span>Contact Us</span></a></li>
+              <li class="cta"><a href="#contact-section" class="nav-link"><span>Контакты</span></a></li>
               </ul>
             </nav>
             <a href="#" class="d-inline-block d-lg-none site-menu-toggle js-menu-toggle text-black float-right"><span class="icon-menu h3"></span></a>
@@ -180,7 +211,7 @@
 
           <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="100">
             <div class="teacher text-center">
-              <img src="images/Mikhail.jpg" alt="Image" class="img-fluid w-50 rounded-circle mx-auto mb-4">
+              <img src="../images/Mikhail.jpg" alt="Image" class="img-fluid w-50 rounded-circle mx-auto mb-4">
               <div class="py-2">
                 <h3 class="text-black">Мистер Кенингсберг</h3>
                 <p class="position">Специалист широкого спектра задач</p>
@@ -193,9 +224,9 @@
             <div class="teacher text-center">
               <img src="images/person_2.jpg" alt="Image" class="img-fluid w-50 rounded-circle mx-auto mb-4">
               <div class="py-2">
-                <h3 class="text-black">Katleen Stone</h3>
-                <p class="position">Physics Teacher</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro eius suscipit delectus enim iusto tempora, adipisci at provident.</p>
+                <h3 class="text-black">Мисиис Саша</h3>
+                <p class="position">Учитель всех направлений</p>
+                <p>Этого учителя вам лучше не злить</p>
               </div>
             </div>
           </div>
@@ -204,9 +235,9 @@
             <div class="teacher text-center">
               <img src="images/person_3.jpg" alt="Image" class="img-fluid w-50 rounded-circle mx-auto mb-4">
               <div class="py-2">
-                <h3 class="text-black">Sadie White</h3>
-                <p class="position">Physics Teacher</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro eius suscipit delectus enim iusto tempora, adipisci at provident.</p>
+                <h3 class="text-black">Мистер Егор</h3>
+                <p class="position">Что то может рассказать</p>
+                <p>Боиться разных заброшек</p>
               </div>
             </div>
           </div>
@@ -215,27 +246,85 @@
     </div>
 
 
-        
       
-    </footer>
+   <!--contact us-->
+    
+    
+     
+   <div class="site-section bg-light" id="contact-section">
+    <div class=".container-hluid">
+      <div class="row justify-content-center">
+        <div class="col-md-7">
 
+          <div class="container">
+            <div class="social-icons">
+                <a href="https://t.me/burockets" target="_blank" class="social-icon">
+                    <i class="fab fa-telegram-plane"></i>
+                </a>
+                <a href="https://vk.com/egobun" target="_blank" class="social-icon">
+                    <i class="fab fa-vk"></i>
+                </a>
+                <a href="https://www.youtube.com/@egorbunakov" target="_blank" class="social-icon">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                
+            </div>
+        </div>
+        
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+          
+          
+          
+        </div>
+      </div>
+    </div>
+  </div>
   
+   
+  <footer class="footer-section bg-white">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-5">
+          <h3>Кто такие BuRockets</h3>
+          <p>BUROCKETS - РАКЕТОСТРОИТЕЛИ. Мы создаем ракеты и обучаем будующих инженеров.</p>
+        </div>
+
+        <div class="col-md-4 ml-auto">
+          <h3>Ссылки</h3>
+          <ul class="list-unstyled footer-links">
+            <li><a href="#home-section">Главная</a></li>
+            <li><a href="#STM32_lab-section">STM32 Lab</a></li>
+            <!--<li><a href="#">Проекты</a></li>-->
+            <li><a href="#teachers-section">Преподаватели</a></li>
+          </ul>
+        </div>
+
+        
+
+      </div>
+
+      
+    </div>
+  </footer>
+    
     
   </div> <!-- .site-wrap -->
 
   <script src="../js/jquery-3.3.1.min.js"></script>
-    <script src="../js/jquery-migrate-3.0.1.min.js"></script>
-    <script src="../js/jquery-ui.js"></script>
-    <script src="../js/popper.min.js"></script>
-    <script src="../js/bootstrap.min.js"></script>
-    <script src="../js/owl.carousel.min.js"></script>
-    <script src="../js/jquery.stellar.min.js"></script>
-    <script src="../js/jquery.countdown.min.js"></script>
-    <script src="../js/bootstrap-datepicker.min.js"></script>
-    <script src="../js/jquery.easing.1.3.js"></script>
-    <script src="../js/aos.js"></script>
-    <script src="../js/jquery.fancybox.min.js"></script>
-    <script src="../js/jquery.sticky.js"></script>
+  <script src="../js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="../js/jquery-ui.js"></script>
+  <script src="../js/popper.min.js"></script>
+  <script src="../js/bootstrap.min.js"></script>
+  <script src="../js/owl.carousel.min.js"></script>
+  <script src="../js/jquery.stellar.min.js"></script>
+  <script src="../js/jquery.countdown.min.js"></script>
+  <script src="../js/bootstrap-datepicker.min.js"></script>
+  <script src="../js/jquery.easing.1.3.js"></script>
+  <script src="../js/aos.js"></script>
+  <script src="../js/jquery.fancybox.min.js"></script>
+  <script src="../js/jquery.sticky.js"></script>
 
   
   <script src="../js/main.js"></script>

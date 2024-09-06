@@ -24,8 +24,12 @@
     <link rel="stylesheet" href="../../css/aos.css">
 
     <link rel="stylesheet" href="../../css/style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
     <title>Установка Git</title>
     <style>
+      
         body {
             font-family: 'Arial', sans-serif;
             line-height: 1.6;
@@ -41,6 +45,32 @@
           text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
           font-family: "Muli", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; }
           
+        .container {
+            padding-left: 15px; /* Убедитесь, что отступы не создают переполнение */
+            padding-right: 15px;
+        }
+
+        .btn-primary span {
+            color: white; /* Устанавливаем белый цвет текста */
+        }
+
+        .social-icons {
+          display: flex;
+          justify-content: center;
+          margin-top: 50px;
+        }
+        .social-icon {
+            font-size: 40px;
+            margin: 0 20px;
+            transition: transform 0.3s, color 0.3s;
+        }
+        .social-icon:hover {
+            transform: scale(1.2);
+            color: #007bff; /* Цвет при наведении */
+        }
+        .social-icon:hover img {
+          transform: scale(1.2);
+      }
     </style>
   </head>
   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
@@ -70,7 +100,7 @@
               <ul class="site-menu main-menu js-clone-nav mx-auto d-none d-lg-block  m-0 p-0">
                 <li><a href="#home-section" class="nav-link">Главная</a></li>
                 <li><a href="#01_git-section" class="nav-link">01_Git</a></li>
-                <li><a href="#programs-section" class="nav-link">Программа</a></li>
+                <!--<li><a href="#programs-section" class="nav-link">Программа</a></li>-->
                 <li><a href="#teachers-section" class="nav-link">Преподаватели</a></li>
               </ul>
             </nav>
@@ -79,7 +109,7 @@
           <div class="ml-auto w-25">
             <nav class="site-navigation position-relative text-right" role="navigation">
               <ul class="site-menu main-menu site-menu-dark js-clone-nav mr-auto d-none d-lg-block m-0 p-0">
-              <li class="cta"><a href="#contact-section" class="nav-link"><span>Contact Us</span></a></li>
+              <li class="cta"><a href="#contact-section" class="nav-link"><span>Контакты</span></a></li>
               </ul>
             </nav>
             <a href="#" class="d-inline-block d-lg-none site-menu-toggle js-menu-toggle text-black float-right"><span class="icon-menu h3"></span></a>
@@ -99,7 +129,11 @@
           <div class="row align-items-center">
             <div class="col-12">
               <div class="row align-items-center">
+                
                 <div class="col-lg-6 mb-4">
+                  <h1  data-aos="fade-up" data-aos-delay="100" ><a href="../STM32_course.html" target="_blank">
+                    <img src="../images/return_to_stm32.png" alt="MDN logo" width="50%"/>
+                  </a></h1>
                   <h1  data-aos="fade-up" data-aos-delay="100" >BuRockets</h1>
                   <h1  data-aos="fade-up" data-aos-delay="100">Лабораторная работа 01_GIT</h1>
                   <p class="mb-4"  data-aos="fade-up" data-aos-delay="200">GIT - распределённая система управления версиями. </p> 
@@ -257,7 +291,7 @@
 
         <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="100">
           <div class="teacher text-center">
-            <img src="images/Mikhail.jpg" alt="Image" class="img-fluid w-50 rounded-circle mx-auto mb-4">
+            <img src="../images/Mikhail.jpg" alt="Image" class="img-fluid w-50 rounded-circle mx-auto mb-4">
             <div class="py-2">
               <h3 class="text-black">Мистер Кенингсберг</h3>
               <p class="position">Специалист широкого спектра задач</p>
@@ -270,10 +304,10 @@
           <div class="teacher text-center">
             <img src="images/person_2.jpg" alt="Image" class="img-fluid w-50 rounded-circle mx-auto mb-4">
             <div class="py-2">
-              <h3 class="text-black">Katleen Stone</h3>
-              <p class="position">Physics Teacher</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro eius suscipit delectus enim iusto tempora, adipisci at provident.</p>
-            </div>
+              <h3 class="text-black">Мисиис Саша</h3>
+                <p class="position">Учитель всех направлений</p>
+                <p>Этого учителя вам лучше не злить</p>
+              </div>
           </div>
         </div>
 
@@ -281,10 +315,10 @@
           <div class="teacher text-center">
             <img src="images/person_3.jpg" alt="Image" class="img-fluid w-50 rounded-circle mx-auto mb-4">
             <div class="py-2">
-              <h3 class="text-black">Sadie White</h3>
-              <p class="position">Physics Teacher</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro eius suscipit delectus enim iusto tempora, adipisci at provident.</p>
-            </div>
+              <h3 class="text-black">Мистер Егор</h3>
+                <p class="position">Что то может рассказать</p>
+                <p>Боиться разных заброшек</p>
+              </div>
           </div>
         </div>
       </div>
@@ -335,10 +369,10 @@
       <div class="col-md-4 ml-auto">
         <h3>Ссылки</h3>
         <ul class="list-unstyled footer-links">
-          <li><a href="#">Главная</a></li>
-          <li><a href="#">Курсы</a></li>
-          <li><a href="#">Программы</a></li>
-          <li><a href="#">Преподаватели</a></li>
+           <li><a href="#home-section">Главная</a></li>
+            <li><a href="#01_git-section">01 Git</a></li>
+            <!--<li><a href="#">Проекты</a></li>-->
+            <li><a href="#teachers-section">Преподаватели</a></li>
         </ul>
       </div>
 
