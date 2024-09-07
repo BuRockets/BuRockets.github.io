@@ -4,6 +4,10 @@
  	once: false
  });
 
+ function toggleImageSize(img) {
+	img.classList.toggle('large'); // Переключаем класс large
+  }
+
 jQuery(document).ready(function($) {
 
 	"use strict";

@@ -698,15 +698,20 @@ h1, h2, h3, h4, h5,
       .img-absolute img {
         max-width: 100%; } }
 
-.img-lab {
-  margin-top: 30px;
-  margin-bottom: 30px;
-  max-width: 100%;
-  height: auto;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  cursor: pointer;
-}
+  .img-lab {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: transform 0.3s ease; /* Добавляем плавный переход */
+  }
+  
+  .img-lab.large {
+    transform: scale(2); /* Увеличиваем изображение в два раза */
+  }
 
 .slide-1 {
   background-size: cover;
