@@ -45,9 +45,16 @@
           text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
           font-family: "Muli", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; }
           
+        p, ul {
+          width: 100%; /* Ширина 100% относительно контейнера */
+          margin: 10px 0; /* Отступы между элементами */
+          text-align: left;
+        }
         .container {
-            padding-left: 15px; /* Убедитесь, что отступы не создают переполнение */
-            padding-right: 15px;
+          max-width: 2000px; /* Максимальная ширина контейнера */
+          margin: 0 auto; /* Центрирование контейнера */
+          padding-left: 15px; /* Убедитесь, что отступы не создают переполнение */
+          padding-right: 15px;
         }
 
         .btn-primary span {
@@ -70,7 +77,11 @@
         }
         .social-icon:hover img {
           transform: scale(1.2);
-      }
+        }
+        .heading{
+            margin-left: 20%;
+            width: 70%;    
+        }
     </style>
   </head>
   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
@@ -134,10 +145,10 @@
                   <h1  data-aos="fade-up" data-aos-delay="100" ><a href="../STM32_course.html" target="_blank">
                     <img src="../images/return_to_stm32.png" alt="MDN logo" width="50%"/>
                   </a></h1>
-                  <h1  data-aos="fade-up" data-aos-delay="100" >BuRockets</h1>
-                  <h1  data-aos="fade-up" data-aos-delay="100">Лабораторная работа 01_GIT</h1>
-                  <p class="mb-4"  data-aos="fade-up" data-aos-delay="200">GIT - распределённая система управления версиями. </p> 
-                  <p data-aos="fade-up" data-aos-delay="300"><a href="#01_git-section" class="btn btn-primary py-3 px-5 btn-pill">01_GIT</a></p>
+                  <h1  data-aos="fade-up" data-aos-delay="100" class = "heading">BuRockets</h1>
+                  <h1  data-aos="fade-up" data-aos-delay="100" class = "heading">Лабораторная работа 01_GIT</h1>
+                  <p data-aos="fade-up" data-aos-delay="200" class = "heading">GIT - распределённая система управления версиями. </p> 
+                  <p data-aos="fade-up" data-aos-delay="300" class = "heading"><a href="#01_git-section" class="btn btn-primary py-3 px-5 btn-pill">01_GIT</a></p>
 
                 </div>
 
