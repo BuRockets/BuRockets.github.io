@@ -29,62 +29,75 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     
     <style>
-        * {
-              box-sizing: border-box;
-          }
-
-          h1, h2, h3, h4, h5,
-        .h1, .h2, .h3, .h4, .h5 {
-            margin-top: 40px;
-          color: #054597ff;
-          text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
-          font-family: "Muli", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; }
-          
-
-          html, body {
-              overflow-x: hidden; /* Скрыть горизонтальную прокрутку */
-          }
-
-          img {
-             
-              height: auto; /* Сохраняем пропорции изображений */
-          }
-
-          .container {
-              padding-left: 15px; /* Убедитесь, что отступы не создают переполнение */
-              padding-right: 15px;
-          }
-
-          .btn-primary span {
-              color: white; /* Устанавливаем белый цвет текста */
-          }
-
-          .social-icons {
-            display: flex;
-            justify-content: center;
-            margin-top: 50px;
-          }
-          .social-icon {
-              font-size: 40px;
-              margin: 0 20px;
-              transition: transform 0.3s, color 0.3s;
-          }
-          .social-icon:hover {
-              transform: scale(1.2);
-              color: #007bff; /* Цвет при наведении */
-          }
-          .social-icon:hover img {
-            transform: scale(1.2);
+      * {
+            box-sizing: border-box;
         }
-          
 
-          /* Примените медиа-запросы для мобильных устройств */
-          @media (max-width: 768px) {
-              body {
-                  font-size: 14px;
-              }
-          }
-    </style>
+        h1, h2, h3, h4, h5,
+      .h1, .h2, .h3, .h4, .h5 {
+          margin-top: 40px;
+        color: #054597ff;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+        font-family: "Muli", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; }
+        p, ul {
+            width: 100%; /* Ширина 100% относительно контейнера */
+            margin: 10px 0; /* Отступы между элементами */
+            text-align: left;
+        }
+
+        html, body {
+            overflow-x: hidden; /* Скрыть горизонтальную прокрутку */
+        }
+
+        img {
+           
+            height: auto; /* Сохраняем пропорции изображений */
+        }
+
+        .container {
+            max-width: 2000px; /* Максимальная ширина контейнера */
+            margin: 0 auto; /* Центрирование контейнера */
+            padding-left: 15px; /* Убедитесь, что отступы не создают переполнение */
+            padding-right: 15px;
+        }
+        .heading{
+          margin-left: 20%;
+          width: 70%;    
+        }
+        .heading-2{
+          text-align: center;
+           
+        }
+        .btn-primary span {
+            color: white; /* Устанавливаем белый цвет текста */
+        }
+
+        .social-icons {
+          display: flex;
+          justify-content: center;
+          margin-top: 50px;
+        }
+        .social-icon {
+            font-size: 40px;
+            margin: 0 20px;
+            transition: transform 0.3s, color 0.3s;
+        }
+        .social-icon:hover {
+            transform: scale(1.2);
+            color: #007bff; /* Цвет при наведении */
+        }
+        .social-icon:hover img {
+          transform: scale(1.2);
+      }
+        
+
+        /* Примените медиа-запросы для мобильных устройств */
+        @media (max-width: 768px) {
+            body {
+                font-size: 14px;
+            }
+        }
+  </style>
 
   </head>
   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
@@ -113,8 +126,8 @@
             <nav class="site-navigation position-relative text-right" role="navigation">
               <ul class="site-menu main-menu js-clone-nav mx-auto d-none d-lg-block  m-0 p-0">
                 <li><a href="#home-section" class="nav-link">Главная</a></li>
+                <li><a href="#programs-section" class="nav-link">Описание</a></li>
                 <li><a href="#STM32_lab-section" class="nav-link">STM32 Lab</a></li>
-                <!--<li><a href="#programs-section" class="nav-link">Программы</a></li>-->
                 <li><a href="#teachers-section" class="nav-link">Преподаватели</a></li>
               </ul>
             </nav>
@@ -144,11 +157,11 @@
             <div class="col-12">
               <div class="row align-items-center">
                 <div class="col-lg-6 mb-4">
-                  <h1  data-aos="fade-up" data-aos-delay="100" >BuRockets</h1>
-                  <h1  data-aos="fade-up" data-aos-delay="100">Лабораторные работы STM32</h1>
-                  <p class="mb-4"  data-aos="fade-up" data-aos-delay="200">STM32 - семейство 32-битных микроконтроллеров </p> 
-                  <p class="mb-4"  data-aos="fade-up" data-aos-delay="200">С помощью данного микроконтроллера ты сможешь создать более технологичную ракету</p>
-                  <p data-aos="fade-up" data-aos-delay="300"><a href="#STM32_lab-section" class="btn btn-primary py-3 px-5 btn-pill">STM32 Lab</a></p>
+                  <h1  data-aos="fade-up" data-aos-delay="100" class = "heading">BuRockets</h1>
+                  <h1  data-aos="fade-up" data-aos-delay="100" class = "heading">Лабораторные работы STM32</h1>
+                  <p   data-aos="fade-up" data-aos-delay="200" class = "heading">STM32 - семейство 32-битных микроконтроллеров </p> 
+                  <p   data-aos="fade-up" data-aos-delay="200" class = "heading">С помощью данного микроконтроллера ты сможешь создать более технологичную ракету</p>
+                  <p data-aos="fade-up" data-aos-delay="300" class = "heading"><a href="#STM32_lab-section" class="btn btn-primary py-3 px-5 btn-pill">STM32 Lab</a></p>
 
                 </div>
 
@@ -175,23 +188,96 @@
       </div>
     </div>
 
+
+
+
+    <div id="programs-section"></div>
+        <div class="container">
+            <div class="row mb-10 justify-content-center">
+                <div class="col-lg-7" data-aos="fade-up" data-aos-delay="">
+                    <h2 class="section-title" >STM32 Lab</h2>
+                    <h1 id="stm32_labs">STM32_labs</h1>
+                    <p><strong>Лабораторные работы, программирование STM32.</strong></p>
+                    <h1 id="-">Описание курса</h1>
+                    <h2 id="-">Введение</h2>
+                    <p>Данный курс расчитан на школьников, в нем изучаются основы программирования с углублением в разработку программ для микроконтроллера STM32. </p>
+                    <h2 id="github">GitHub</h2>
+                    <p>GitHub — это облачная платформа для ведения IT-проектов и совместной разработки, внутри которой находится система контроля версий Git, а также полноценная социальная сеть для разработчиков. Простыми словами с помощью Git мы сможем хранить историю изменений нашего проекта и работать над ним совместо. Также все лабораторные работы размещены на репозитории Git, на котором вы сейчас находитесь. Ученик должен создать свой git репозитрий, и хранить в нем все свои выполненые лабораторные работы.</p>
+                    <h2 id="-stm32">Микроконтроллер STM32</h2>
+                    <p>Сердцем вашего финального проекта будет микроконтроллер STM32, внутри него и будет происходить вся магия, он как дирижер, заставляет работать все внешние устройства правильно и в нужный момент.</p>
+                    <h2 id="-">Блоки, Интерфейсы, Протоколы</h2>
+                    <p><strong>При прохождении лабораторных работ будут изучены блоки микроконтроллера, такие как:</strong></p>
+                    <ul>
+                    <li><p>GPIO (General Purpose Input/Output): Это интерфейс, который позволяет микроконтроллеру взаимодействовать с внешними устройствами, отправляя или принимая цифровые сигналы.</p>
+                    </li>
+                    <li><p>TIM (Timer): Это функциональный блок в микроконтроллере, который позволяет создавать временные задержки, измерять интервалы времени и генерировать события по истечении определенного времени.</p>
+                    </li>
+                    <li><p>UART (Universal Asynchronous Receiver/Transmitter): Это метод связи, используемый для передачи данных между устройствами посредством последовательной передачи битов информации.</p>
+                    </li>
+                    <li><p>I2C (Inter-Integrated Circuit): Это протокол коммуникации, который позволяет нескольким устройствам обмениваться данными через общие провода данных и тактовой сигнал.</p>
+                    </li>
+                    <li><p>SPI (Serial Peripheral Interface): Это синхронный протокол обмена данными, который позволяет микроконтроллеру взаимодействовать с несколькими внешними устройствами, передавая данные в полудуплексном режиме.</p>
+                    </li>
+                    </ul>
+                    <h2 id="-">Результат прохождения курса</h2>
+                    <p>Главным результатом после прохождения курса станут приобретенные навыки и знания с помощью которых школьник сможет самостоятельно разработать программу системы спасения ракеты. </p>
+                    <h1 id="-">Требования для прохождения курса</h1>
+                    <h2 id="-">Оборудование для прохождения лабораторных работ</h2>
+                    <ul>
+                    <li>Компьютер (с операционной системой windows)</li>
+                    <li>Макетная плата для сборки электрических схем</li>
+                    <li>Отладочная лата bluepill с микроконтроллером stm32f103</li>
+                    <li>Программатор stlink v2</li>
+                    <li>Модуль usb to ttl</li>
+                    <li>Светодиод</li>
+                    <li>Кнопка</li>
+                    <li>Сервопривод</li>
+                    <li>9-ти осевой датчик mpu9250</li>
+                    <li>Радио-модуль hc-12</li>
+                    <li>Потенциометр</li>
+                    <li>Провода для подключения модулей</li>
+                    </ul>
+                    <h2 id="-">Программное обеспечение</h2>
+                    <ul>
+                    <li><a href="https://code.visualstudio.com">Visual Studio Code</a></li>
+                    <li><a href="https://www.st.com/en/development-tools/stm32cubeide.html">CubeIde</a></li>
+                    <li><a href="https://www.hw-group.com/software/hercules-setup-utility">Hercules</a></li>
+                    <li><a href="https://www.st.com/en/development-tools/stsw-link004.html">St-link utility</a></li>
+                    </ul>
+                    <blockquote>
+                    <p>[!NOTE] 
+                    При скачивании программ с сайта <a href="https://www.st.com/en/development-tools/stm32-software-development-tools/products.html">www.st.com</a> нужно зарегистрироваться при регистрации не указывайте страну - Россия</p>
+                    </blockquote>
+
+                    
+                </div>
+            </div>
+        </div>
+      </div>
+   
+    </div>
+
+
+
+
+
     <div class="site-section courses-title" id="STM32_lab-section">
         <div class="container">
             <div class="row mb-10 justify-content-center">
                 <div class="col-lg-7 text-center" data-aos="fade-up" data-aos-delay="">
                     <h2 class="section-title">STM32 Lab</h2>
             
-                    <p class="mt-4"><a href="01_git/01_git.html" class="btn btn-primary">01_GIT</a></p>
-                    <p class="mt-4"><a href="02_basics_C/02_basics_C.html" class="btn btn-primary">02_Basics_C</a></p>
-                    <p class="mt-4"><a href="03_blinkled/03_blinkled.html" class="btn btn-primary">03_Blink_Led</a></p>
-                    <p class="mt-4"><a href="04_gpio/04_gpio.html" class="btn btn-primary">04_GPIO</a></p>
-                    <p class="mt-4"><a href="05_exti/05_exti.html" class="btn btn-primary">05_EXTI</a></p>
-                    <p class="mt-4"><a href="06_tim/06_tim.html" class="btn btn-primary">06_TIM</a></p>
-                    <p class="mt-4"><a href="07_adc/07_adc.html" class="btn btn-primary">07_ADC</a></p>
-                    <p class="mt-4"><a href="08_uart/08_uart.html" class="btn btn-primary">08_UART</a></p>
-                    <p class="mt-4"><a href="09_i2c/09_i2c.html" class="btn btn-primary">09_I2C</a></p>
+                    <p class = "heading-2"><a href="01_git/01_git.html" class="btn btn-primary">01_GIT</a></p>
+                    <p class = "heading-2"><a href="02_basics_C/02_basics_C.html" class="btn btn-primary">02_Basics_C</a></p>
+                    <p class = "heading-2"><a href="03_blinkled/03_blinkled.html" class="btn btn-primary">03_Blink_Led</a></p>
+                    <p class = "heading-2"><a href="04_gpio/04_gpio.html" class="btn btn-primary">04_GPIO</a></p>
+                    <p class = "heading-2"><a href="05_exti/05_exti.html" class="btn btn-primary">05_EXTI</a></p>
+                    <p class = "heading-2"><a href="06_tim/06_tim.html" class="btn btn-primary">06_TIM</a></p>
+                    <p class = "heading-2"><a href="07_adc/07_adc.html" class="btn btn-primary">07_ADC</a></p>
+                    <p class = "heading-2"><a href="08_uart/08_uart.html" class="btn btn-primary">08_UART</a></p>
+                    <p class="heading-2"><a href="09_i2c/09_i2c.html" class="btn btn-primary">09_I2C</a></p>
 
-                    <p class="mt-4"><a href="#" class="btn btn-primary">В начало страницы</a></p>
+                    <p class="heading-2"><a href="#" class="btn btn-primary">В начало страницы</a></p>
                 </div>
             </div>
         </div>
@@ -301,8 +387,8 @@
           <h3>Ссылки</h3>
           <ul class="list-unstyled footer-links">
             <li><a href="#home-section">Главная</a></li>
+            <li><a href="#programs-section">Описание</a></li>
             <li><a href="#STM32_lab-section">STM32 Lab</a></li>
-            <!--<li><a href="#">Проекты</a></li>-->
             <li><a href="#teachers-section">Преподаватели</a></li>
           </ul>
         </div>
