@@ -212,15 +212,15 @@
                     <li>отладочная плата BluePill</li>
                     <li>потенциометр</li>
                     </ul>
-                    <p><img src="./images/poten.jpg" width="300" height="250"></p>
+                    <p><img src="./images/poten.jpg" width="300" height="250"  class = "img-lab"></p>
                     <p><br></p>
                     <p>Итак, у нас есть два АЦП (ADC1 и ADC2) на других платах их может быть больше. Ножки обоих АЦП подключены к одному мультиплексору…</p>
-                    <p><img src="./images/adc_rm.jpg" alt=""></p>
+                    <p><img src="./images/adc_rm.jpg" alt="" class = "img-lab"></p>
                     <p><a href="./doc/reference_manual.pdf">Reference manual RM0008</a> стр. 217</p>
                     <p>Vref — опорное напряжение для АЦП. У описываемой платы этих входов нет. Схема питания выглядит так…</p>
-                    <p><img src="./images/Vref.jpg" alt=""></p>
+                    <p><img src="./images/Vref.jpg" alt="" class = "img-lab"></p>
                     <p>У BluePill в общей сложности можно настроить 10 аналоговых входов…</p>
-                    <p><img src="./images/pin.png" alt=""></p>
+                    <p><img src="./images/pin.png" alt="" class = "img-lab"></p>
                     <p>Работу АЦП можно условно разделить на два режима — «Независимый» и «Парный». В первом случае можно запускать АЦП1 и АЦП2 (с любыми выбранными каналами) независимо друг от друга (это обычный режим), а во втором можно сделать так, что один АЦП будет запускать другой, либо оба АЦП настроить на работу с одной и той же ножкой (далее канал).</p>
                     <p>Каналы АЦП можно настроить как регулярные (regular channels), и как инжектированные (Injected channels).</p>
                     <p>Суть инжектированного канала заключается в том, что у него есть своя отдельная ячейка для сохранения результата. То есть если каналы РА0, РА1, РА2, РА3 настроить как инжектированные, то результаты будут сохранены в четыре разные ячейки.
@@ -232,10 +232,10 @@
                     <p>Сначала будем работать с регулярными каналами, а потом с инжектированными.</p>
                     <p>Создадим проект в CubeMX…</p>
                     <p>Настройте тактирование ADC (ADC Prescaler)…</p>
-                    <p><img src="./images/clock.jpg" alt=""></p>
+                    <p><img src="./images/clock.jpg" alt="" class = "img-lab"></p>
                     <p>Частота АЦП не должна превышать 14МГц.</p>
                     <p>Инициализируйте ADC1…</p>
-                    <p><img src="./images/parameter%20settings.png" alt=""></p>
+                    <p><img src="./images/parameter%20settings.png" alt="" class = "img-lab"></p>
                     <p>На вход ADC_IN0 (PA0) нужно подать считываемый сигнал, а в UART будем выводить показания.</p>
                     <p><br></p>
                     <p>В main.c добавьте хедер:</p>
@@ -305,7 +305,7 @@
                     <p><br></p>
                     <p>Чтоб программа не тормозилась в ожидании результата, воспользуемся прерыванием по окончании преобразования.</p>
                     <p>Активируйте глобальное прерывание и сгенерируйте проект…</p>
-                    <p><img src="./images/nvic.jpg" alt=""></p>
+                    <p><img src="./images/nvic.jpg" alt="" class = "img-lab"></p>
                     <p>Добавьте колбек, в котором результат будет копироваться в переменную:</p>
                     <pre><code><span class="hljs-comment">/* USER CODE BEGIN 0 */</span>
                     <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">HAL_ADC_ConvCpltCallback</span><span class="hljs-params">(ADC_HandleTypeDef* hadc)</span>
@@ -332,7 +332,7 @@
                     ...
                     </code></pre><p><br></p>
                     <p>Чтобы каждый раз не запускать АЦП, можно активировать режим циклического чтения каналов…</p>
-                    <p><img src="./images/continuous_conversion_mode.jpg" alt=""></p>
+                    <p><img src="./images/continuous_conversion_mode.jpg" alt="" class = "img-lab"></p>
                     <pre><code>while (<span class="hljs-number">1</span>)
                     {
                     snprintf(trans_str, <span class="hljs-number">63</span>, <span class="hljs-string">"ADC %d<span class="hljs-subst">\n</span>"</span>, (uint16_t)adc);
@@ -347,7 +347,7 @@
 
                     Нужно увеличить время сэмплирования:
 
-                    <img src="./images/sampling_time.jpg" alt="">
+                    <img src="./images/sampling_time.jpg" alt="" class = "img-lab">
 
                     Если этого не сделать, то опрос АЦП будет происходить слишком быстро и программа будет постоянно висеть в прерывании. Подробно про сэмплирование написано ниже.
 
