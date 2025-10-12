@@ -313,6 +313,29 @@
         
           <!--end Пайка-->
 
+          <!--Matlab Simulink-->
+          <div class="course bg-white h-100 align-self-stretch">
+            <figure class="m-0">
+                <a href="#" onclick="check_simulink_Credentials(event)">
+                    <img src="images/simulink.png" alt="Image" class="img-fluid">
+                </a>
+            </figure>
+            <div class="course-inner-text py-4 px-4">
+                <span class="course-price">2500₽</span>
+                <div class="meta"><span class="icon-clock-o"></span>4 Lessons / 12 weeks</div>
+                <h3><a href="#" onclick="check_simulink_Credentials(event)">Matlab-Simulink</a></h3>
+                <p>Вдохни жизнь и разум своей ракете.</p>
+            </div>
+            <!--
+            <div class="d-flex border-top stats">
+                <div class="py-3 px-4"><span class="icon-users"></span> 9.21 </div>
+                <div class="py-3 px-4 w-25 ml-auto border-left"><span class="icon-chat"></span> 3 </div>
+            </div>
+            -->
+          </div>
+
+            <!--end Matlab Simulink-->
+
 
         </div>
         </div>
@@ -397,26 +420,47 @@
       
 
 
-      function check_soldering_Credentials(event) {
-          event.preventDefault(); // Предотвращаем переход по ссылке
-  
-          // Запрашиваем email и пароль у пользователя
-          const email = prompt("Введите ваш email:");
-          const password = prompt("Введите ваш пароль:");
-  
-          // Правильные данные
-          const validEmails = ["user1", "user2"];
-          const validPasswords = ["parol1", "parol2"];
-  
-          // Проверка данных
-          if (validEmails.includes(email) && validPasswords.includes(password)) {
-              // Если данные верные, переходим на страницу
-              window.location.href = "soldering/soldering_course.html";
-          } else {
-              // Если данные неверные, выводим сообщение об ошибке
-              alert("Неправильный email или пароль. Пожалуйста, попробуйте снова.");
-          }
-      }
+        function check_simulink_Credentials(event) {
+            event.preventDefault(); // Предотвращаем переход по ссылке
+    
+            // Запрашиваем email и пароль у пользователя
+            const email = prompt("Введите ваш email:");
+            const password = prompt("Введите ваш пароль:");
+    
+            // Правильные данные
+            const validEmails = ["user1", "user2"];
+            const validPasswords = ["parol1", "parol2"];
+    
+            // Проверка данных
+            if (validEmails.includes(email) && validPasswords.includes(password)) {
+                // Если данные верные, переходим на страницу
+                window.location.href = "simulink/simulink_course.html";
+            } else {
+                // Если данные неверные, выводим сообщение об ошибке
+                alert("Неправильный email или пароль. Пожалуйста, попробуйте снова.");
+            }
+        }
+
+        function check_soldering_Credentials(event) {
+            event.preventDefault(); // Предотвращаем переход по ссылке
+    
+            // Запрашиваем email и пароль у пользователя
+            const email = prompt("Введите ваш email:");
+            const password = prompt("Введите ваш пароль:");
+    
+            // Правильные данные
+            const validEmails = ["user1", "user2"];
+            const validPasswords = ["parol1", "parol2"];
+    
+            // Проверка данных
+            if (validEmails.includes(email) && validPasswords.includes(password)) {
+                // Если данные верные, переходим на страницу
+                window.location.href = "soldering/soldering_course.html";
+            } else {
+                // Если данные неверные, выводим сообщение об ошибке
+                alert("Неправильный email или пароль. Пожалуйста, попробуйте снова.");
+            }
+        }
   </script>
 
     <!--test-->
@@ -579,33 +623,33 @@
 
           <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="100">
             <div class="teacher text-center">
-              <img src="images/Mikhail.jpg" alt="Image" class="img-fluid w-50 rounded-circle mx-auto mb-4">
+              <img src="images/teacher.png" alt="Image" class="img-fluid w-50 rounded-circle mx-auto mb-4">
               <div class="py-2">
-                <h3 class="text-black">Мистер Кенингсберг</h3>
-                <p class="position">Специалист широкого спектра задач</p>
-                <p>Первый в Калининграде запустил ракету. P.s. Калининградский Илон Маск</p>
+                <h3 class="text-black">Преподаватель 1</h3>
+                <p class="position">Исследователь, научный сотрудник</p>
+                <p>Специальзируется на теме 1</p>
               </div>
             </div>
           </div>
   
           <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="200">
             <div class="teacher text-center">
-              <img src="images/Alexandra.jpg" alt="Image" class="img-fluid w-50 rounded-circle mx-auto mb-4">
+              <img src="images/teacher2.png" alt="Image" class="img-fluid w-50 rounded-circle mx-auto mb-4">
               <div class="py-2">
-                <h3 class="text-black">Мисиис Саша</h3>
-                <p class="position">Учитель всех направлений</p>
-                <p>Этого учителя вам лучше не злить</p>
+                <h3 class="text-black">Преподаватель 2</h3>
+                <p class="position">Инженер программист</p>
+                <p>Специальзируется на теме 2</p>
               </div>
             </div>
           </div>
   
           <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="300">
             <div class="teacher text-center">
-              <img src="images/egor.jpg" alt="Image" class="img-fluid w-50 rounded-circle mx-auto mb-4">
+              <img src="images/teacher3.jpg" alt="Image" class="img-fluid w-50 rounded-circle mx-auto mb-4">
               <div class="py-2">
-                <h3 class="text-black">Мистер Егор</h3>
-                <p class="position">Что то может рассказать</p>
-                <p>Боиться разных заброшек</p>
+                <h3 class="text-black">Преподаватель 3</h3>
+                <p class="position">Инженер электронщик</p>
+                <p>Специальзируется на теме 3</p>
               </div>
             </div>
           </div>
