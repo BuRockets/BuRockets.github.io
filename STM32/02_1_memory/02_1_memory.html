@@ -270,14 +270,14 @@
                 <br/>
                 <div><b class="spoiler-title" title="Там что-то есть...">другие функции CubeProgrammer</b><div class="spoiler-body">Если нажать вкладку Open file, то можно открыть какой-нибудь .hex или .bin файл прямо в программе.<br/>
                 <br/>
-                Кнопка <img src="images/7.jpg"/> открывает интерфейс для загрузки прошивки в МК…<br/>
+                Кнопка <img src="images/7.jpg" class="img-lab"/> открывает интерфейс для загрузки прошивки в МК…<br/>
                 <br/>
                 <img src="images/8.png" class="img-lab"/><br/>
                 Выбираем нужный файл, очищаем флеш полностью <em>(Full chip erase)</em> или выборочные страницы, и жмём Start Programming.<br/>
                 <br/>
-                <img src="images/9.jpg"/>  — что-то связанное с внешним загрузчиком или внешним девайсом, не знаю, не вникал. <br/>
+                <img src="images/9.jpg" class="img-lab"/>  — что-то связанное с внешним загрузчиком или внешним девайсом, не знаю, не вникал. <br/>
                 <br/>
-                <img src="images/10.jpg"/>  — очищает флеш.<br/>
+                <img src="images/10.jpg" class="img-lab"/>  — очищает флеш.<br/>
                 </div></div><br/>
                 <br/>
                 В нижней части лог подключения, а справа-снизу полезная информация о вашем МК. Здесь интересны два пункта…<br/>
@@ -294,10 +294,10 @@
                 <br/>
                 <div><b class="spoiler-title" title="Там что-то есть...">коды</b><div class="spoiler-body">Коды можно посмотреть в <a href="https://www.st.com/content/ccc/resource/technical/document/application_note/b9/9b/16/3a/12/1e/40/0c/CD00167594.pdf/files/CD00167594.pdf/jcr:content/translations/en.CD00167594.pdf" rel="nofollow">AN2606</a> стр. 307.<br/>
                 <br/>
-                <img src="images/12.jpg"/><br/>
+                <img src="images/12.jpg" class="img-lab"/><br/>
                 </div></div><br/>
                 <br/>
-                Теперь нажмём кнопочку <img src="images/13.jpg"/> чтоб появился список Option bytes…<br/>
+                Теперь нажмём кнопочку <img src="images/13.jpg" class="img-lab"/> чтоб появился список Option bytes…<br/>
                 <br/>
                 <img src="images/14.jpg" class="img-lab"/><br/>
                 … и вернёмся к изучению памяти.<br/>
@@ -461,7 +461,7 @@
                 <br/>
                 <div><b class="spoiler-title" title="Там что-то есть...">пояснение</b><div class="spoiler-body">Чтоб лучше понять иллюстрацию выше, откройте файл <blak>STM32F103C8_FLASH.ld</blak> и найдите там такие строки…<br/>
                 <br/>
-                <img src="images/31.jpg"/><br/>
+                <img src="images/31.jpg" class="img-lab"/><br/>
                 <br/>
                 Нас интересует переменная <blak>_estack</blak>, которая указывает на конец оперативной памяти. У микроконтроллера stm32F103c8 оперативная память располагаться в области от <blak>0x20000000</blak> до <blak>0x20005000</blak>, что равно 20480 байтам <em>(20Кб)</em>. Визуально это выглядит так…<br/>
                 <br/>
@@ -478,7 +478,7 @@
                 <br/>
                 Чтоб перенести какую-то из этих областей в ССМ, нужно подкорректировать файл компоновщика <em>(или линковщика, называйте как вам удобнее)</em> с расширением <blak>.ld</blak>… <br/>
                 <br/>
-                <img src="images/34.jpg"/><br/>
+                <img src="images/34.jpg" class="img-lab"/><br/>
                 <br/>
                 <br/>
                 Находим там интересующие нас блоки…<br/>
@@ -538,11 +538,11 @@
                 <br/>
                 В результате получаем — до:<br/>
                 <br/>
-                <img src="images/35.jpg"/><br/>
+                <img src="images/35.jpg" class="img-lab"/><br/>
                 <br/>
                 После:<br/>
                 <br/>
-                <img src="images/36.jpg"/><br/>
+                <img src="images/36.jpg" class="img-lab"/><br/>
                 <br/>
                 <em>Инфа взята <a href="https://www.openstm32.org/Using+CCM+Memory?structure=Documentation" rel="nofollow">тут</a>.</em><br/>
                 <br/>
@@ -607,13 +607,13 @@
                 <br/>
                 Наглядно это выглядит так. Ячейка у нас очищена <em>(биты заполнены единицами)</em> и мы записываем в неё число 7 <em>(0х07)</em>…<br/>
                 <br/>
-                <img src="images/37.jpg"/><br/>
+                <img src="images/37.jpg" class="img-lab"/><br/>
                 <em>Выполняется логическое «И», и в ячейку записывается нужное нам число 7.</em><br/>
                 <br/>
                 А теперь допустим что мы хотим записать в эту же ячейку число 13 <em>(0x0d)</em> поверх старого значения…<br/>
                 <br/>
                 <br/>
-                <img src="images/38.jpg"/><br/>
+                <img src="images/38.jpg" class="img-lab"/><br/>
                 <em>Выполняется логическое «И» между старым значением 0х07 и новым 0x0d. В результате вместо желаемого числа 13, в ячейку записывается число 5.</em><br/>
                 </div></div><br/>
                 <br/>
